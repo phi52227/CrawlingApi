@@ -12,19 +12,23 @@ import django
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "crawlingNews.settings")
 
 django.setup()
-from news.models import News
+from news.models import (
+    PoliticsNews,
+    EconomyNews,
+    SocietyNews,
+    LifeCultureNews,
+    ItScienceNews,
+)
 
-start = time.time()
+total_start = time.time()
 
-options = webdriver.ChromeOptions()
-options.add_argument("headless")
-
-driver = webdriver.Chrome(options=options)
-
-driver.get("https://news.naver.com/main/main.naver?mode=LSD&mid=shm&sid1=100")
-
-wait = WebDriverWait(driver, 3)
-time.sleep(0.5)
+sections = {
+    "100": PoliticsNews,
+    "101": EconomyNews,
+    "102": SocietyNews,
+    "103": LifeCultureNews,
+    "105": ItScienceNews,
+}
 
 
 # Function to collect news titles
@@ -55,19 +59,6 @@ def collect_news_urls():
     return news_urls
 
 
-# Collect news titles before and after clicking the pagination link
-all_news_urls = []
-all_news_urls += collect_news_urls()
-
-driver.find_element(By.CSS_SELECTOR, "#paging > a:nth-child(2)").click()
-time.sleep(0.5)
-
-# Collect news titles again after clicking the pagination link
-all_news_urls += collect_news_urls()
-
-driver.quit()
-
-
 def date_to_integer(target_date):
     target_date = target_date.split()
     date = target_date[0][:-1].replace(".", "")
@@ -83,7 +74,7 @@ def date_to_integer(target_date):
     return result_date
 
 
-def crawling_article(url, index):
+def crawling_article(url, index, News):
     response = requests.get(url)
 
     html_text = response.text
@@ -115,10 +106,38 @@ def crawling_article(url, index):
         pass
 
 
-article_list = []
+options = webdriver.ChromeOptions()
+options.add_argument("headless")
 
-for index, url in enumerate(all_news_urls):
-    crawling_article(url, index)
 
-end = time.time()
-print(f"{end - start : .5f} sec")
+for section, News in sections.items():
+    start = time.time()
+    driver = webdriver.Chrome(options=options)
+    driver.get(
+        f"https://news.naver.com/main/main.naver?mode=LSD&mid=shm&sid1={section}"
+    )
+
+    wait = WebDriverWait(driver, 3)
+    time.sleep(0.5)
+
+    # Collect news titles before and after clicking the pagination link
+    all_news_urls = []
+    all_news_urls += collect_news_urls()
+
+    driver.find_element(By.CSS_SELECTOR, "#paging > a:nth-child(2)").click()
+    time.sleep(0.5)
+
+    # Collect news titles again after clicking the pagination link
+    all_news_urls += collect_news_urls()
+
+    driver.quit()
+
+    for index, url in enumerate(all_news_urls):
+        crawling_article(url, index, News)
+
+    end = time.time()
+    print(f"section({section}) 응답시간 : {end - start : .5f} sec")
+
+
+total_end = time.time()
+print(f"총 응답시간 : {total_end - total_start : .5f} sec")
