@@ -17,18 +17,34 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from news.views import (
-    PoliticsNewsListAPI,
-    EconomyNewsListAPI,
-    SocietyNewsListAPI,
-    LifeCultureNewsListAPI,
-    ItScienceNewsListAPI,
+    PoliticsNewsListAPI as naverPoliticsNewsListAPI,
+    EconomyNewsListAPI as naverEconomyNewsListAPI,
+    SocietyNewsListAPI as naverSocietyNewsListAPI,
+    LifeCultureNewsListAPI as naverLifeCultureNewsListAPI,
+    ItScienceNewsListAPI as naverItScienceNewsListAPI,
+)
+from dongaIlbo.views import (
+    PoliticsNewsListAPI as dongaIlboPoliticsNewsListAPI,
+    CultureNewsListAPI as dongaIlboCultureNewsListAPI,
+    EconomyNewsListAPI as dongaIlboEconomyNewsListAPI,
+    InternationalNewsListAPI as dongaIlboInternationalNewsListAPI,
+    EntertainmentsNewsListAPI as dongaIlboEntertainmentsNewsListAPI,
+    SocietyNewsListAPI as dongaIlboSocietyNewsListAPI,
+    SportsNewsListAPI as dongaIlboSportsNewsListAPI,
 )
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api/news/1", PoliticsNewsListAPI.as_view()),
-    path("api/news/2", EconomyNewsListAPI.as_view()),
-    path("api/news/3", SocietyNewsListAPI.as_view()),
-    path("api/news/4", LifeCultureNewsListAPI.as_view()),
-    path("api/news/5", ItScienceNewsListAPI.as_view()),
+    path("api/news/naver/1", naverPoliticsNewsListAPI.as_view()),
+    path("api/news/naver/2", naverEconomyNewsListAPI.as_view()),
+    path("api/news/naver/3", naverSocietyNewsListAPI.as_view()),
+    path("api/news/naver/4", naverLifeCultureNewsListAPI.as_view()),
+    path("api/news/naver/5", naverItScienceNewsListAPI.as_view()),
+    path("api/news/donga/1", dongaIlboPoliticsNewsListAPI.as_view()),
+    path("api/news/donga/2", dongaIlboEconomyNewsListAPI.as_view()),
+    path("api/news/donga/3", dongaIlboSocietyNewsListAPI.as_view()),
+    path("api/news/donga/4", dongaIlboCultureNewsListAPI.as_view()),
+    path("api/news/donga/5", dongaIlboInternationalNewsListAPI.as_view()),
+    path("api/news/donga/6", dongaIlboEntertainmentsNewsListAPI.as_view()),
+    path("api/news/donga/7", dongaIlboSportsNewsListAPI.as_view()),
 ]
