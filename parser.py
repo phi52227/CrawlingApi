@@ -82,6 +82,8 @@ def crawling_article(url, index, News):
     html = bs(html_text, "html.parser")
 
     article_title = html.select_one("#title_area > span").get_text()
+    article_title = article_title.replace("...", "... ")
+    article_title = article_title.replace("...  ", "... ")
 
     article_time = html.select_one(
         "#ct > div.media_end_head.go_trans > div.media_end_head_info.nv_notrans > div.media_end_head_info_datestamp > div > span"
@@ -92,7 +94,14 @@ def crawling_article(url, index, News):
     article_content = re.sub("<.+?>", "", article_content).strip()
     article_content = re.sub(" +", " ", article_content)
     article_content = re.sub("\n{2,}", "\n\n", article_content)
-    article_content = article_content.replace("\n ", "\n")
+    #article_content = article_content.replace(" \n", "\n")
+    #article_content = article_content.replace("\n", "\n ")
+    #article_content = article_content.replace("\n \n", "\n\n")
+    article_content = article_content.replace("  ", " ")
+    article_content = article_content.replace("...", "... ")
+    article_content = article_content.replace("...  ", "... ")
+    article_content = article_content.replace("&lt;", "<")
+    article_content = article_content.replace("&gt;", ">")
 
     try:
         News(

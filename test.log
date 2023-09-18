@@ -1,0 +1,2100 @@
+
+ 11.30755 sec
+ 11.85111 sec
+ 11.43298 sec
+ 131.89354 sec
+ 13.37346 sec
+ 15.74888 sec
+ 12.32008 sec
+ 12.96375 sec
+ 12.47022 sec
+ 13.51348 sec
+ 19.66756 sec
+ 13.49497 sec
+ 11.64670 sec
+section(100) 응답시간 :  14.28141 sec
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+    driver.get(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 299.760
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x557f0af1ae23 <unknown>
+#1 0x557f0ac437a7 <unknown>
+#2 0x557f0ac2a79e <unknown>
+#3 0x557f0ac2a5ce <unknown>
+#4 0x557f0ac2928a <unknown>
+#5 0x557f0ac2984f <unknown>
+#6 0x557f0ac39b47 <unknown>
+#7 0x557f0ac3aca2 <unknown>
+#8 0x557f0ac4d80f <unknown>
+#9 0x557f0ac5210b <unknown>
+#10 0x557f0ac29ef1 <unknown>
+#11 0x557f0ac4d5e4 <unknown>
+#12 0x557f0acbb563 <unknown>
+#13 0x557f0aca2de3 <unknown>
+#14 0x557f0ac76a7b <unknown>
+#15 0x557f0ac7781e <unknown>
+#16 0x557f0aedc638 <unknown>
+#17 0x557f0aee0507 <unknown>
+#18 0x557f0aeeac4c <unknown>
+#19 0x557f0aee1136 <unknown>
+#20 0x557f0aeaf9cf <unknown>
+#21 0x557f0af04b98 <unknown>
+#22 0x557f0af04d68 <unknown>
+#23 0x557f0af13cb3 <unknown>
+#24 0x7f512d338609 start_thread
+
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+    driver.get(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x55b2e8c58e23 <unknown>
+#1 0x55b2e89815f6 <unknown>
+#2 0x55b2e8969e4f <unknown>
+#3 0x55b2e896972d <unknown>
+#4 0x55b2e896865c <unknown>
+#5 0x55b2e89685ce <unknown>
+#6 0x55b2e896728a <unknown>
+#7 0x55b2e896784f <unknown>
+#8 0x55b2e8977b47 <unknown>
+#9 0x55b2e8978ca2 <unknown>
+#10 0x55b2e898b80f <unknown>
+#11 0x55b2e899010b <unknown>
+#12 0x55b2e8967ef1 <unknown>
+#13 0x55b2e898b449 <unknown>
+#14 0x55b2e89f9563 <unknown>
+#15 0x55b2e89e0de3 <unknown>
+#16 0x55b2e89b4a7b <unknown>
+#17 0x55b2e89b581e <unknown>
+#18 0x55b2e8c1a638 <unknown>
+#19 0x55b2e8c1e507 <unknown>
+#20 0x55b2e8c28c4c <unknown>
+#21 0x55b2e8c1f136 <unknown>
+#22 0x55b2e8bed9cf <unknown>
+#23 0x55b2e8c42b98 <unknown>
+#24 0x55b2e8c42d68 <unknown>
+#25 0x55b2e8c51cb3 <unknown>
+#26 0x7f546e294609 start_thread
+
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+    driver.get(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x557bc6038e23 <unknown>
+#1 0x557bc5d615f6 <unknown>
+#2 0x557bc5d48567 <unknown>
+#3 0x557bc5d4728a <unknown>
+#4 0x557bc5d4784f <unknown>
+#5 0x557bc5d57b47 <unknown>
+#6 0x557bc5d58ca2 <unknown>
+#7 0x557bc5d6b80f <unknown>
+#8 0x557bc5d7010b <unknown>
+#9 0x557bc5d47ef1 <unknown>
+#10 0x557bc5d6b5e4 <unknown>
+#11 0x557bc5dd9563 <unknown>
+#12 0x557bc5dc0de3 <unknown>
+#13 0x557bc5d94a7b <unknown>
+#14 0x557bc5d9581e <unknown>
+#15 0x557bc5ffa638 <unknown>
+#16 0x557bc5ffe507 <unknown>
+#17 0x557bc6008c4c <unknown>
+#18 0x557bc5fff136 <unknown>
+#19 0x557bc5fcd9cf <unknown>
+#20 0x557bc6022b98 <unknown>
+#21 0x557bc6022d68 <unknown>
+#22 0x557bc6031cb3 <unknown>
+#23 0x7f5a1d07d609 start_thread
+
+section(100) 응답시간 :  13.50581 sec
+section(101) 응답시간 :  12.54775 sec
+section(102) 응답시간 :  12.39541 sec
+section(103) 응답시간 :  12.00890 sec
+section(105) 응답시간 :  12.49341 sec
+총 응답시간 :  62.95501 sec
+section(100) 응답시간 :  68.29221 sec
+section(101) 응답시간 :  13.76912 sec
+section(102) 응답시간 :  12.43003 sec
+section(103) 응답시간 :  12.03873 sec
+section(105) 응답시간 :  12.38706 sec
+총 응답시간 :  118.91889 sec
+section(100) 응답시간 :  11.70855 sec
+section(101) 응답시간 :  12.38605 sec
+section(102) 응답시간 :  12.21809 sec
+section(103) 응답시간 :  12.13888 sec
+section(105) 응답시간 :  12.40973 sec
+총 응답시간 :  60.86449 sec
+section(100) 응답시간 :  14.21203 sec
+section(101) 응답시간 :  13.25763 sec
+section(102) 응답시간 :  12.25075 sec
+section(103) 응답시간 :  14.18937 sec
+section(105) 응답시간 :  21.02750 sec
+총 응답시간 :  74.94160 sec
+section(100) 응답시간 :  12.54675 sec
+section(101) 응답시간 :  12.11086 sec
+section(102) 응답시간 :  12.89666 sec
+section(103) 응답시간 :  12.47467 sec
+section(105) 응답시간 :  12.21182 sec
+총 응답시간 :  62.24349 sec
+section(100) 응답시간 :  12.10783 sec
+section(101) 응답시간 :  12.48916 sec
+section(102) 응답시간 :  12.59415 sec
+section(103) 응답시간 :  12.72318 sec
+section(105) 응답시간 :  12.64495 sec
+총 응답시간 :  62.56215 sec
+section(100) 응답시간 :  12.16241 sec
+section(101) 응답시간 :  12.23792 sec
+section(102) 응답시간 :  12.19403 sec
+section(103) 응답시간 :  13.32680 sec
+section(105) 응답시간 :  12.21330 sec
+총 응답시간 :  62.13989 sec
+section(100) 응답시간 :  11.91576 sec
+section(101) 응답시간 :  12.62870 sec
+section(102) 응답시간 :  12.80756 sec
+section(103) 응답시간 :  13.12358 sec
+section(105) 응답시간 :  12.37717 sec
+총 응답시간 :  62.85539 sec
+section(100) 응답시간 :  11.89800 sec
+section(101) 응답시간 :  12.43934 sec
+section(102) 응답시간 :  12.32467 sec
+section(103) 응답시간 :  12.36268 sec
+section(105) 응답시간 :  13.06466 sec
+총 응답시간 :  62.09227 sec
+section(100) 응답시간 :  11.69063 sec
+section(101) 응답시간 :  12.15622 sec
+section(102) 응답시간 :  12.34532 sec
+section(103) 응답시간 :  12.06025 sec
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+    driver.get(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 299.801
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x55824d9dee23 <unknown>
+#1 0x55824d7077a7 <unknown>
+#2 0x55824d6ee79e <unknown>
+#3 0x55824d6ee5ce <unknown>
+#4 0x55824d6ed28a <unknown>
+#5 0x55824d6ed84f <unknown>
+#6 0x55824d6fdb47 <unknown>
+#7 0x55824d6feca2 <unknown>
+#8 0x55824d71180f <unknown>
+#9 0x55824d71610b <unknown>
+#10 0x55824d6edef1 <unknown>
+#11 0x55824d7115e4 <unknown>
+#12 0x55824d77f563 <unknown>
+#13 0x55824d766de3 <unknown>
+#14 0x55824d73aa7b <unknown>
+#15 0x55824d73b81e <unknown>
+#16 0x55824d9a0638 <unknown>
+#17 0x55824d9a4507 <unknown>
+#18 0x55824d9aec4c <unknown>
+#19 0x55824d9a5136 <unknown>
+#20 0x55824d9739cf <unknown>
+#21 0x55824d9c8b98 <unknown>
+#22 0x55824d9c8d68 <unknown>
+#23 0x55824d9d7cb3 <unknown>
+#24 0x7f28c84f5609 start_thread
+
+section(100) 응답시간 :  75.64006 sec
+section(101) 응답시간 :  13.65580 sec
+section(102) 응답시간 :  12.33100 sec
+section(103) 응답시간 :  12.22435 sec
+section(105) 응답시간 :  12.80864 sec
+총 응답시간 :  126.66473 sec
+section(100) 응답시간 :  19.66194 sec
+section(101) 응답시간 :  13.47717 sec
+section(102) 응답시간 :  12.99894 sec
+section(103) 응답시간 :  12.89406 sec
+section(105) 응답시간 :  12.84570 sec
+총 응답시간 :  71.88303 sec
+section(100) 응답시간 :  11.68003 sec
+section(101) 응답시간 :  12.57845 sec
+section(102) 응답시간 :  12.17693 sec
+section(103) 응답시간 :  12.35064 sec
+section(105) 응답시간 :  12.17342 sec
+총 응답시간 :  60.96126 sec
+section(100) 응답시간 :  14.20015 sec
+section(101) 응답시간 :  13.56044 sec
+section(102) 응답시간 :  12.12934 sec
+section(103) 응답시간 :  12.75102 sec
+section(105) 응답시간 :  13.09719 sec
+총 응답시간 :  65.74038 sec
+section(100) 응답시간 :  13.05088 sec
+section(101) 응답시간 :  12.24495 sec
+section(102) 응답시간 :  12.04895 sec
+section(103) 응답시간 :  12.81775 sec
+section(105) 응답시간 :  13.83229 sec
+총 응답시간 :  63.99731 sec
+section(100) 응답시간 :  11.76519 sec
+section(101) 응답시간 :  12.10625 sec
+section(102) 응답시간 :  12.11847 sec
+section(103) 응답시간 :  12.10114 sec
+section(105) 응답시간 :  11.86326 sec
+총 응답시간 :  59.95702 sec
+section(100) 응답시간 :  11.63882 sec
+section(101) 응답시간 :  12.48169 sec
+section(102) 응답시간 :  12.59881 sec
+section(103) 응답시간 :  12.26531 sec
+section(105) 응답시간 :  12.12569 sec
+총 응답시간 :  61.11257 sec
+section(100) 응답시간 :  11.88854 sec
+section(101) 응답시간 :  12.68776 sec
+section(102) 응답시간 :  13.07123 sec
+section(103) 응답시간 :  11.95814 sec
+section(105) 응답시간 :  12.05622 sec
+총 응답시간 :  61.66556 sec
+section(100) 응답시간 :  11.37118 sec
+section(101) 응답시간 :  12.55677 sec
+section(102) 응답시간 :  12.26268 sec
+section(103) 응답시간 :  12.08389 sec
+section(105) 응답시간 :  11.84693 sec
+총 응답시간 :  60.12510 sec
+section(100) 응답시간 :  11.37608 sec
+section(101) 응답시간 :  12.34490 sec
+section(102) 응답시간 :  12.34786 sec
+section(103) 응답시간 :  12.30768 sec
+section(105) 응답시간 :  11.77314 sec
+총 응답시간 :  60.15178 sec
+
+------------------------------------09.14 14:46------------------------------------------------
+section(100) 응답시간 :  14.74855 sec
+section(101) 응답시간 :  13.17750 sec
+section(102) 응답시간 :  12.47554 sec
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+    driver.get(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x55766683ce23 <unknown>
+#1 0x5576665655f6 <unknown>
+#2 0x55766654c567 <unknown>
+#3 0x55766654b28a <unknown>
+#4 0x55766654b84f <unknown>
+#5 0x55766655bb47 <unknown>
+#6 0x55766655cca2 <unknown>
+#7 0x55766656f80f <unknown>
+#8 0x55766657410b <unknown>
+#9 0x55766654bef1 <unknown>
+#10 0x55766656f5e4 <unknown>
+#11 0x5576665dd563 <unknown>
+#12 0x5576665c4de3 <unknown>
+#13 0x557666598a7b <unknown>
+#14 0x55766659981e <unknown>
+#15 0x5576667fe638 <unknown>
+#16 0x557666802507 <unknown>
+#17 0x55766680cc4c <unknown>
+#18 0x557666803136 <unknown>
+#19 0x5576667d19cf <unknown>
+#20 0x557666826b98 <unknown>
+#21 0x557666826d68 <unknown>
+#22 0x557666835cb3 <unknown>
+#23 0x7f2a444c0609 start_thread
+
+section(100) 응답시간 :  14.06115 sec
+section(101) 응답시간 :  13.30576 sec
+section(102) 응답시간 :  13.33560 sec
+section(103) 응답시간 :  43.41817 sec
+section(105) 응답시간 :  218.88206 sec
+총 응답시간 :  303.00642 sec
+section(100) 응답시간 :  13.12207 sec
+section(101) 응답시간 :  312.53932 sec
+section(102) 응답시간 :  15.73828 sec
+section(103) 응답시간 :  13.95612 sec
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+    driver.get(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 299.761
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x559f711c3e23 <unknown>
+#1 0x559f70eec7a7 <unknown>
+#2 0x559f70ed379e <unknown>
+#3 0x559f70ed35ce <unknown>
+#4 0x559f70ed228a <unknown>
+#5 0x559f70ed284f <unknown>
+#6 0x559f70ee2b47 <unknown>
+#7 0x559f70ee3ca2 <unknown>
+#8 0x559f70ef680f <unknown>
+#9 0x559f70efb10b <unknown>
+#10 0x559f70ed2ef1 <unknown>
+#11 0x559f70ef65e4 <unknown>
+#12 0x559f70f64563 <unknown>
+#13 0x559f70f4bde3 <unknown>
+#14 0x559f70f1fa7b <unknown>
+#15 0x559f70f2081e <unknown>
+#16 0x559f71185638 <unknown>
+#17 0x559f71189507 <unknown>
+#18 0x559f71193c4c <unknown>
+#19 0x559f7118a136 <unknown>
+#20 0x559f711589cf <unknown>
+#21 0x559f711adb98 <unknown>
+#22 0x559f711add68 <unknown>
+#23 0x559f711bccb3 <unknown>
+#24 0x7fb19ada8609 start_thread
+
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+        driver.get(driver.get(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+        self.execute(Command.GET, {"url": url})self.execute(Command.GET, {"url": url})
+
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+        self.error_handler.check_response(response)self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+        raise exception_class(message, screen, stacktrace)raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 299.620
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x55f6684d2e23 <unknown>
+#1 0x55f6681fb7a7 <unknown>
+#2 0x55f6681e279e <unknown>
+#3 0x55f6681e25ce <unknown>
+#4 0x55f6681e128a <unknown>
+#5 0x55f6681e184f <unknown>
+#6 0x55f6681f1b47 <unknown>
+#7 0x55f6681f2ca2 <unknown>
+#8 0x55f66820580f <unknown>
+#9 0x55f66820a10b <unknown>
+#10 0x55f6681e1ef1 <unknown>
+#11 0x55f6682055e4 <unknown>
+#12 0x55f668273563 <unknown>
+#13 0x55f66825ade3 <unknown>
+#14 0x55f66822ea7b <unknown>
+#15 0x55f66822f81e <unknown>
+#16 0x55f668494638 <unknown>
+#17 0x55f668498507 <unknown>
+#18 0x55f6684a2c4c <unknown>
+#19 0x55f668499136 <unknown>
+#20 0x55f6684679cf <unknown>
+#21 0x55f6684bcb98 <unknown>
+#22 0x55f6684bcd68 <unknown>
+#23 0x55f6684cbcb3 <unknown>
+#24 0x7ff6c1ba7609 start_thread
+
+
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 299.619
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x55f8b55ece23 <unknown>
+#1 0x55f8b53157a7 <unknown>
+#2 0x55f8b52fc79e <unknown>
+#3 0x55f8b52fc5ce <unknown>
+#4 0x55f8b52fb28a <unknown>
+#5 0x55f8b52fb84f <unknown>
+#6 0x55f8b530bb47 <unknown>
+#7 0x55f8b530cca2 <unknown>
+#8 0x55f8b531f80f <unknown>
+#9 0x55f8b532410b <unknown>
+#10 0x55f8b52fbef1 <unknown>
+#11 0x55f8b531f5e4 <unknown>
+#12 0x55f8b538d563 <unknown>
+#13 0x55f8b5374de3 <unknown>
+#14 0x55f8b5348a7b <unknown>
+#15 0x55f8b534981e <unknown>
+#16 0x55f8b55ae638 <unknown>
+#17 0x55f8b55b2507 <unknown>
+#18 0x55f8b55bcc4c <unknown>
+#19 0x55f8b55b3136 <unknown>
+#20 0x55f8b55819cf <unknown>
+#21 0x55f8b55d6b98 <unknown>
+#22 0x55f8b55d6d68 <unknown>
+#23 0x55f8b55e5cb3 <unknown>
+#24 0x7f7fc9580609 start_thread
+
+section(100) 응답시간 :  28.29162 sec
+section(101) 응답시간 :  14.93828 sec
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+    driver.get(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 299.734
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x55b754defe23 <unknown>
+#1 0x55b754b187a7 <unknown>
+#2 0x55b754aff79e <unknown>
+#3 0x55b754aff5ce <unknown>
+#4 0x55b754afe28a <unknown>
+#5 0x55b754afe84f <unknown>
+#6 0x55b754b0eb47 <unknown>
+#7 0x55b754b0fca2 <unknown>
+#8 0x55b754b2280f <unknown>
+#9 0x55b754b2710b <unknown>
+#10 0x55b754afeef1 <unknown>
+#11 0x55b754b225e4 <unknown>
+#12 0x55b754b90563 <unknown>
+#13 0x55b754b77de3 <unknown>
+#14 0x55b754b4ba7b <unknown>
+#15 0x55b754b4c81e <unknown>
+#16 0x55b754db1638 <unknown>
+#17 0x55b754db5507 <unknown>
+#18 0x55b754dbfc4c <unknown>
+#19 0x55b754db6136 <unknown>
+#20 0x55b754d849cf <unknown>
+#21 0x55b754dd9b98 <unknown>
+#22 0x55b754dd9d68 <unknown>
+#23 0x55b754de8cb3 <unknown>
+#24 0x7f70cc3f5609 start_thread
+
+section(100) 응답시간 :  18.18195 sec
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+    driver.get(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 299.781
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x5635a178be23 <unknown>
+#1 0x5635a14b47a7 <unknown>
+#2 0x5635a149b79e <unknown>
+#3 0x5635a149b5ce <unknown>
+#4 0x5635a149a28a <unknown>
+#5 0x5635a149a84f <unknown>
+#6 0x5635a14aab47 <unknown>
+#7 0x5635a14abca2 <unknown>
+#8 0x5635a14be80f <unknown>
+#9 0x5635a14c310b <unknown>
+#10 0x5635a149aef1 <unknown>
+#11 0x5635a14be5e4 <unknown>
+#12 0x5635a152c563 <unknown>
+#13 0x5635a1513de3 <unknown>
+#14 0x5635a14e7a7b <unknown>
+#15 0x5635a14e881e <unknown>
+#16 0x5635a174d638 <unknown>
+#17 0x5635a1751507 <unknown>
+#18 0x5635a175bc4c <unknown>
+#19 0x5635a1752136 <unknown>
+#20 0x5635a17209cf <unknown>
+#21 0x5635a1775b98 <unknown>
+#22 0x5635a1775d68 <unknown>
+#23 0x5635a1784cb3 <unknown>
+#24 0x7f8a1065c609 start_thread
+
+section(100) 응답시간 :  16.63002 sec
+section(101) 응답시간 :  13.12418 sec
+section(102) 응답시간 :  13.14049 sec
+section(103) 응답시간 :  12.88495 sec
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+    driver.get(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x561b040f9e23 <unknown>
+#1 0x561b03e225f6 <unknown>
+#2 0x561b03e0ae4f <unknown>
+#3 0x561b03e0a72d <unknown>
+#4 0x561b03e0965c <unknown>
+#5 0x561b03e095ce <unknown>
+#6 0x561b03e0828a <unknown>
+#7 0x561b03e0884f <unknown>
+#8 0x561b03e18b47 <unknown>
+#9 0x561b03e19ca2 <unknown>
+#10 0x561b03e2c80f <unknown>
+#11 0x561b03e3110b <unknown>
+#12 0x561b03e08ef1 <unknown>
+#13 0x561b03e2c449 <unknown>
+#14 0x561b03e9a563 <unknown>
+#15 0x561b03e81de3 <unknown>
+#16 0x561b03e55a7b <unknown>
+#17 0x561b03e5681e <unknown>
+#18 0x561b040bb638 <unknown>
+#19 0x561b040bf507 <unknown>
+#20 0x561b040c9c4c <unknown>
+#21 0x561b040c0136 <unknown>
+#22 0x561b0408e9cf <unknown>
+#23 0x561b040e3b98 <unknown>
+#24 0x561b040e3d68 <unknown>
+#25 0x561b040f2cb3 <unknown>
+#26 0x7fb6dffc3609 start_thread
+
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+    driver.get(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 299.646
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x558d0b951e23 <unknown>
+#1 0x558d0b67a7a7 <unknown>
+#2 0x558d0b66179e <unknown>
+#3 0x558d0b6615ce <unknown>
+#4 0x558d0b66028a <unknown>
+#5 0x558d0b66084f <unknown>
+#6 0x558d0b670b47 <unknown>
+#7 0x558d0b671ca2 <unknown>
+#8 0x558d0b68480f <unknown>
+#9 0x558d0b68910b <unknown>
+#10 0x558d0b660ef1 <unknown>
+#11 0x558d0b6845e4 <unknown>
+#12 0x558d0b6f2563 <unknown>
+#13 0x558d0b6d9de3 <unknown>
+#14 0x558d0b6ada7b <unknown>
+#15 0x558d0b6ae81e <unknown>
+#16 0x558d0b913638 <unknown>
+#17 0x558d0b917507 <unknown>
+#18 0x558d0b921c4c <unknown>
+#19 0x558d0b918136 <unknown>
+#20 0x558d0b8e69cf <unknown>
+#21 0x558d0b93bb98 <unknown>
+#22 0x558d0b93bd68 <unknown>
+#23 0x558d0b94acb3 <unknown>
+#24 0x7febe2a4b609 start_thread
+
+section(100) 응답시간 :  14.02544 sec
+section(101) 응답시간 :  13.43131 sec
+section(102) 응답시간 :  13.11661 sec
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+    driver.get(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 299.831
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x55f3803cfe23 <unknown>
+#1 0x55f3800f87a7 <unknown>
+#2 0x55f3800df79e <unknown>
+#3 0x55f3800df5ce <unknown>
+#4 0x55f3800de28a <unknown>
+#5 0x55f3800de84f <unknown>
+#6 0x55f3800eeb47 <unknown>
+#7 0x55f3800efca2 <unknown>
+#8 0x55f38010280f <unknown>
+#9 0x55f38010710b <unknown>
+#10 0x55f3800deef1 <unknown>
+#11 0x55f3801025e4 <unknown>
+#12 0x55f380170563 <unknown>
+#13 0x55f380157de3 <unknown>
+#14 0x55f38012ba7b <unknown>
+#15 0x55f38012c81e <unknown>
+#16 0x55f380391638 <unknown>
+#17 0x55f380395507 <unknown>
+#18 0x55f38039fc4c <unknown>
+#19 0x55f380396136 <unknown>
+#20 0x55f3803649cf <unknown>
+#21 0x55f3803b9b98 <unknown>
+#22 0x55f3803b9d68 <unknown>
+#23 0x55f3803c8cb3 <unknown>
+#24 0x7f3b672a3609 start_thread
+
+section(100) 응답시간 :  16.61600 sec
+section(101) 응답시간 :  13.47618 sec
+section(102) 응답시간 :  13.55243 sec
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+    driver.get(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 299.840
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x563ff7628e23 <unknown>
+#1 0x563ff73517a7 <unknown>
+#2 0x563ff733879e <unknown>
+#3 0x563ff73385ce <unknown>
+#4 0x563ff733728a <unknown>
+#5 0x563ff733784f <unknown>
+#6 0x563ff7347b47 <unknown>
+#7 0x563ff7348ca2 <unknown>
+#8 0x563ff735b80f <unknown>
+#9 0x563ff736010b <unknown>
+#10 0x563ff7337ef1 <unknown>
+#11 0x563ff735b5e4 <unknown>
+#12 0x563ff73c9563 <unknown>
+#13 0x563ff73b0de3 <unknown>
+#14 0x563ff7384a7b <unknown>
+#15 0x563ff738581e <unknown>
+#16 0x563ff75ea638 <unknown>
+#17 0x563ff75ee507 <unknown>
+#18 0x563ff75f8c4c <unknown>
+#19 0x563ff75ef136 <unknown>
+#20 0x563ff75bd9cf <unknown>
+#21 0x563ff7612b98 <unknown>
+#22 0x563ff7612d68 <unknown>
+#23 0x563ff7621cb3 <unknown>
+#24 0x7f2d900e9609 start_thread
+
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+    driver.get(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x55a08f43be23 <unknown>
+#1 0x55a08f1645f6 <unknown>
+#2 0x55a08f14ce4f <unknown>
+#3 0x55a08f14c72d <unknown>
+#4 0x55a08f14b65c <unknown>
+#5 0x55a08f14b5ce <unknown>
+#6 0x55a08f14a28a <unknown>
+#7 0x55a08f14a84f <unknown>
+#8 0x55a08f15ab47 <unknown>
+#9 0x55a08f15bca2 <unknown>
+#10 0x55a08f16e80f <unknown>
+#11 0x55a08f17310b <unknown>
+#12 0x55a08f14aef1 <unknown>
+#13 0x55a08f16e449 <unknown>
+#14 0x55a08f1dc563 <unknown>
+#15 0x55a08f1c3de3 <unknown>
+#16 0x55a08f197a7b <unknown>
+#17 0x55a08f19881e <unknown>
+#18 0x55a08f3fd638 <unknown>
+#19 0x55a08f401507 <unknown>
+#20 0x55a08f40bc4c <unknown>
+#21 0x55a08f402136 <unknown>
+#22 0x55a08f3d09cf <unknown>
+#23 0x55a08f425b98 <unknown>
+#24 0x55a08f425d68 <unknown>
+#25 0x55a08f434cb3 <unknown>
+#26 0x7f89f1726609 start_thread
+
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+    driver.get(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 299.492
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x556cb8c25e23 <unknown>
+#1 0x556cb894e7a7 <unknown>
+#2 0x556cb893579e <unknown>
+#3 0x556cb89355ce <unknown>
+#4 0x556cb893428a <unknown>
+#5 0x556cb893484f <unknown>
+#6 0x556cb8944b47 <unknown>
+#7 0x556cb8945ca2 <unknown>
+#8 0x556cb895880f <unknown>
+#9 0x556cb895d10b <unknown>
+#10 0x556cb8934ef1 <unknown>
+#11 0x556cb89585e4 <unknown>
+#12 0x556cb89c6563 <unknown>
+#13 0x556cb89adde3 <unknown>
+#14 0x556cb8981a7b <unknown>
+#15 0x556cb898281e <unknown>
+#16 0x556cb8be7638 <unknown>
+#17 0x556cb8beb507 <unknown>
+#18 0x556cb8bf5c4c <unknown>
+#19 0x556cb8bec136 <unknown>
+#20 0x556cb8bba9cf <unknown>
+#21 0x556cb8c0fb98 <unknown>
+#22 0x556cb8c0fd68 <unknown>
+#23 0x556cb8c1ecb3 <unknown>
+#24 0x7f47f63a0609 start_thread
+
+section(100) 응답시간 :  17.92020 sec
+section(101) 응답시간 :  13.20695 sec
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+    driver.get(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 299.777
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x56316f254e23 <unknown>
+#1 0x56316ef7d7a7 <unknown>
+#2 0x56316ef6479e <unknown>
+#3 0x56316ef645ce <unknown>
+#4 0x56316ef6328a <unknown>
+#5 0x56316ef6384f <unknown>
+#6 0x56316ef73b47 <unknown>
+#7 0x56316ef74ca2 <unknown>
+#8 0x56316ef8780f <unknown>
+#9 0x56316ef8c10b <unknown>
+#10 0x56316ef63ef1 <unknown>
+#11 0x56316ef875e4 <unknown>
+#12 0x56316eff5563 <unknown>
+#13 0x56316efdcde3 <unknown>
+#14 0x56316efb0a7b <unknown>
+#15 0x56316efb181e <unknown>
+#16 0x56316f216638 <unknown>
+#17 0x56316f21a507 <unknown>
+#18 0x56316f224c4c <unknown>
+#19 0x56316f21b136 <unknown>
+#20 0x56316f1e99cf <unknown>
+#21 0x56316f23eb98 <unknown>
+#22 0x56316f23ed68 <unknown>
+#23 0x56316f24dcb3 <unknown>
+#24 0x7f8cce030609 start_thread
+
+section(100) 응답시간 :  13.78108 sec
+section(101) 응답시간 :  12.95331 sec
+section(102) 응답시간 :  13.92065 sec
+section(103) 응답시간 :  13.13154 sec
+section(105) 응답시간 :  13.12394 sec
+총 응답시간 :  66.91719 sec
+section(100) 응답시간 :  11.87483 sec
+section(101) 응답시간 :  13.27168 sec
+section(102) 응답시간 :  12.90186 sec
+section(103) 응답시간 :  223.09896 sec
+section(105) 응답시간 :  13.39848 sec
+총 응답시간 :  274.55130 sec
+section(100) 응답시간 :  12.20527 sec
+section(101) 응답시간 :  173.62950 sec
+section(102) 응답시간 :  15.24973 sec
+section(103) 응답시간 :  12.96262 sec
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+    driver.get(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 299.805
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x5647bf47be23 <unknown>
+#1 0x5647bf1a47a7 <unknown>
+#2 0x5647bf18b79e <unknown>
+#3 0x5647bf18b5ce <unknown>
+#4 0x5647bf18a28a <unknown>
+#5 0x5647bf18a84f <unknown>
+#6 0x5647bf19ab47 <unknown>
+#7 0x5647bf19bca2 <unknown>
+#8 0x5647bf1ae80f <unknown>
+#9 0x5647bf1b310b <unknown>
+#10 0x5647bf18aef1 <unknown>
+#11 0x5647bf1ae5e4 <unknown>
+#12 0x5647bf21c563 <unknown>
+#13 0x5647bf203de3 <unknown>
+#14 0x5647bf1d7a7b <unknown>
+#15 0x5647bf1d881e <unknown>
+#16 0x5647bf43d638 <unknown>
+#17 0x5647bf441507 <unknown>
+#18 0x5647bf44bc4c <unknown>
+#19 0x5647bf442136 <unknown>
+#20 0x5647bf4109cf <unknown>
+#21 0x5647bf465b98 <unknown>
+#22 0x5647bf465d68 <unknown>
+#23 0x5647bf474cb3 <unknown>
+#24 0x7f9055ce3609 start_thread
+
+section(100) 응답시간 :  14.05373 sec
+section(101) 응답시간 :  12.79701 sec
+section(102) 응답시간 :  12.71181 sec
+section(103) 응답시간 :  12.75731 sec
+section(105) 응답시간 :  12.69619 sec
+총 응답시간 :  65.02106 sec
+section(100) 응답시간 :  59.44722 sec
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+    driver.get(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 299.700
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x55b486c7fe23 <unknown>
+#1 0x55b4869a87a7 <unknown>
+#2 0x55b48698f79e <unknown>
+#3 0x55b48698f5ce <unknown>
+#4 0x55b48698e28a <unknown>
+#5 0x55b48698e84f <unknown>
+#6 0x55b48699eb47 <unknown>
+#7 0x55b48699fca2 <unknown>
+#8 0x55b4869b280f <unknown>
+#9 0x55b4869b710b <unknown>
+#10 0x55b48698eef1 <unknown>
+#11 0x55b4869b25e4 <unknown>
+#12 0x55b486a20563 <unknown>
+#13 0x55b486a07de3 <unknown>
+#14 0x55b4869dba7b <unknown>
+#15 0x55b4869dc81e <unknown>
+#16 0x55b486c41638 <unknown>
+#17 0x55b486c45507 <unknown>
+#18 0x55b486c4fc4c <unknown>
+#19 0x55b486c46136 <unknown>
+#20 0x55b486c149cf <unknown>
+#21 0x55b486c69b98 <unknown>
+#22 0x55b486c69d68 <unknown>
+#23 0x55b486c78cb3 <unknown>
+#24 0x7fe4104a9609 start_thread
+
+section(100) 응답시간 :  14.36619 sec
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+    driver.get(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 299.250
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x5585bbc63e23 <unknown>
+#1 0x5585bb98c7a7 <unknown>
+#2 0x5585bb97379e <unknown>
+#3 0x5585bb9735ce <unknown>
+#4 0x5585bb97228a <unknown>
+#5 0x5585bb97284f <unknown>
+#6 0x5585bb982b47 <unknown>
+#7 0x5585bb983ca2 <unknown>
+#8 0x5585bb99680f <unknown>
+#9 0x5585bb99b10b <unknown>
+#10 0x5585bb972ef1 <unknown>
+#11 0x5585bb9965e4 <unknown>
+#12 0x5585bba04563 <unknown>
+#13 0x5585bb9ebde3 <unknown>
+#14 0x5585bb9bfa7b <unknown>
+#15 0x5585bb9c081e <unknown>
+#16 0x5585bbc25638 <unknown>
+#17 0x5585bbc29507 <unknown>
+#18 0x5585bbc33c4c <unknown>
+#19 0x5585bbc2a136 <unknown>
+#20 0x5585bbbf89cf <unknown>
+#21 0x5585bbc4db98 <unknown>
+#22 0x5585bbc4dd68 <unknown>
+#23 0x5585bbc5ccb3 <unknown>
+#24 0x7fb2ebedf609 start_thread
+
+section(100) 응답시간 :  290.86537 sec
+section(101) 응답시간 :  85.97576 sec
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+    driver.get(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 299.757
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x55a3177c3e23 <unknown>
+#1 0x55a3174ec7a7 <unknown>
+#2 0x55a3174d379e <unknown>
+#3 0x55a3174d35ce <unknown>
+#4 0x55a3174d228a <unknown>
+#5 0x55a3174d284f <unknown>
+#6 0x55a3174e2b47 <unknown>
+#7 0x55a3174e3ca2 <unknown>
+#8 0x55a3174f680f <unknown>
+#9 0x55a3174fb10b <unknown>
+#10 0x55a3174d2ef1 <unknown>
+#11 0x55a3174f65e4 <unknown>
+#12 0x55a317564563 <unknown>
+#13 0x55a31754bde3 <unknown>
+#14 0x55a31751fa7b <unknown>
+#15 0x55a31752081e <unknown>
+#16 0x55a317785638 <unknown>
+#17 0x55a317789507 <unknown>
+#18 0x55a317793c4c <unknown>
+#19 0x55a31778a136 <unknown>
+#20 0x55a3177589cf <unknown>
+#21 0x55a3177adb98 <unknown>
+#22 0x55a3177add68 <unknown>
+#23 0x55a3177bccb3 <unknown>
+#24 0x7f024009f609 start_thread
+
+section(100) 응답시간 :  18.02346 sec
+section(101) 응답시간 :  16.60394 sec
+section(102) 응답시간 :  16.39283 sec
+section(103) 응답시간 :  191.52423 sec
+Traceback (most recent call last):
+  File "/home/admin5227/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "/home/admin5227/.local/lib/python3.8/site-packages/urllib3/connection.py", line 461, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.8/http/client.py", line 285, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/admin5227/.local/lib/python3.8/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/urllib3/util/retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "/home/admin5227/.local/lib/python3.8/site-packages/urllib3/connection.py", line 461, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.8/http/client.py", line 285, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 136, in <module>
+    crawling_article(url, index, News)
+  File "/home/admin5227/CrawlingApi/parser.py", line 78, in crawling_article
+    response = requests.get(url)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/requests/adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+    driver.get(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 299.773
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x560c55477e23 <unknown>
+#1 0x560c551a07a7 <unknown>
+#2 0x560c5518779e <unknown>
+#3 0x560c551875ce <unknown>
+#4 0x560c5518628a <unknown>
+#5 0x560c5518684f <unknown>
+#6 0x560c55196b47 <unknown>
+#7 0x560c55197ca2 <unknown>
+#8 0x560c551aa80f <unknown>
+#9 0x560c551af10b <unknown>
+#10 0x560c55186ef1 <unknown>
+#11 0x560c551aa5e4 <unknown>
+#12 0x560c55218563 <unknown>
+#13 0x560c551ffde3 <unknown>
+#14 0x560c551d3a7b <unknown>
+#15 0x560c551d481e <unknown>
+#16 0x560c55439638 <unknown>
+#17 0x560c5543d507 <unknown>
+#18 0x560c55447c4c <unknown>
+#19 0x560c5543e136 <unknown>
+#20 0x560c5540c9cf <unknown>
+#21 0x560c55461b98 <unknown>
+#22 0x560c55461d68 <unknown>
+#23 0x560c55470cb3 <unknown>
+#24 0x7f901e538609 start_thread
+
+section(100) 응답시간 :  17.43371 sec
+section(101) 응답시간 :  120.15592 sec
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+    driver.get(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 299.749
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x55c7b506ce23 <unknown>
+#1 0x55c7b4d957a7 <unknown>
+#2 0x55c7b4d7c79e <unknown>
+#3 0x55c7b4d7c5ce <unknown>
+#4 0x55c7b4d7b28a <unknown>
+#5 0x55c7b4d7b84f <unknown>
+#6 0x55c7b4d8bb47 <unknown>
+#7 0x55c7b4d8cca2 <unknown>
+#8 0x55c7b4d9f80f <unknown>
+#9 0x55c7b4da410b <unknown>
+#10 0x55c7b4d7bef1 <unknown>
+#11 0x55c7b4d9f5e4 <unknown>
+#12 0x55c7b4e0d563 <unknown>
+#13 0x55c7b4df4de3 <unknown>
+#14 0x55c7b4dc8a7b <unknown>
+#15 0x55c7b4dc981e <unknown>
+#16 0x55c7b502e638 <unknown>
+#17 0x55c7b5032507 <unknown>
+#18 0x55c7b503cc4c <unknown>
+#19 0x55c7b5033136 <unknown>
+#20 0x55c7b50019cf <unknown>
+#21 0x55c7b5056b98 <unknown>
+#22 0x55c7b5056d68 <unknown>
+#23 0x55c7b5065cb3 <unknown>
+#24 0x7f46d2326609 start_thread
+
+section(100) 응답시간 :  20.22134 sec
+section(101) 응답시간 :  15.99055 sec
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+    driver.get(
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 299.757
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x55df0d08ee23 <unknown>
+#1 0x55df0cdb77a7 <unknown>
+#2 0x55df0cd9e79e <unknown>
+#3 0x55df0cd9e5ce <unknown>
+#4 0x55df0cd9d28a <unknown>
+#5 0x55df0cd9d84f <unknown>
+#6 0x55df0cdadb47 <unknown>
+#7 0x55df0cdaeca2 <unknown>
+#8 0x55df0cdc180f <unknown>
+#9 0x55df0cdc610b <unknown>
+#10 0x55df0cd9def1 <unknown>
+#11 0x55df0cdc15e4 <unknown>
+#12 0x55df0ce2f563 <unknown>
+#13 0x55df0ce16de3 <unknown>
+#14 0x55df0cdeaa7b <unknown>
+#15 0x55df0cdeb81e <unknown>
+#16 0x55df0d050638 <unknown>
+#17 0x55df0d054507 <unknown>
+#18 0x55df0d05ec4c <unknown>
+#19 0x55df0d055136 <unknown>
+#20 0x55df0d0239cf <unknown>
+#21 0x55df0d078b98 <unknown>
+#22 0x55df0d078d68 <unknown>
+#23 0x55df0d087cb3 <unknown>
+#24 0x7f93c5704609 start_thread
+
+section(100) 응답시간 :  18.62919 sec
+section(101) 응답시간 :  16.48266 sec
+section(102) 응답시간 :  15.88501 sec
+section(103) 응답시간 :  109.46123 sec
+Traceback (most recent call last):
+  File "/home/admin5227/CrawlingApi/parser.py", line 116, in <module>
+    for section, News in sections.items():
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 353, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/admin5227/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: headless chrome=116.0.5845.187)
+Stacktrace:
+#0 0x5590fcc85e23 <unknown>
+#1 0x5590fc9ae5f6 <unknown>
+#2 0x5590fc996e4f <unknown>
+#3 0x5590fc99672d <unknown>
+#4 0x5590fc99565c <unknown>
+#5 0x5590fc9955ce <unknown>
+#6 0x5590fc99428a <unknown>
+#7 0x5590fc99484f <unknown>
+#8 0x5590fc9a4b47 <unknown>
+#9 0x5590fc9a5ca2 <unknown>
+#10 0x5590fc9b880f <unknown>
+#11 0x5590fc9bd10b <unknown>
+#12 0x5590fc994ef1 <unknown>
+#13 0x5590fc9b8449 <unknown>
+#14 0x5590fca26563 <unknown>
+#15 0x5590fca0dde3 <unknown>
+#16 0x5590fc9e1a7b <unknown>
+#17 0x5590fc9e281e <unknown>
+#18 0x5590fcc47638 <unknown>
+#19 0x5590fcc4b507 <unknown>
+#20 0x5590fcc55c4c <unknown>
+#21 0x5590fcc4c136 <unknown>
+#22 0x5590fcc1a9cf <unknown>
+#23 0x5590fcc6fb98 <unknown>
+#24 0x5590fcc6fd68 <unknown>
+#25 0x5590fcc7ecb3 <unknown>
+#26 0x7fe458792609 start_thread
+
+section(100) 응답시간 :  20.79771 sec
+section(100) 응답시간 :  13.80678 sec
+section(101) 응답시간 :  13.84497 sec
+section(102) 응답시간 :  13.96316 sec
+section(103) 응답시간 :  12.61642 sec
+attempt to write a readonly database
+attempt to write a readonly database
+section(105) 응답시간 :  14.16389 sec
+총 응답시간 :  68.43956 sec
+section(100) 응답시간 :  14.14597 sec
+section(101) 응답시간 :  14.73476 sec
+section(102) 응답시간 :  14.50233 sec
+section(103) 응답시간 :  13.32254 sec
+section(105) 응답시간 :  14.68938 sec
+총 응답시간 :  71.39648 sec
+section(100) 응답시간 :  16.26616 sec
+section(101) 응답시간 :  13.85938 sec
+section(102) 응답시간 :  13.98364 sec
+section(103) 응답시간 :  12.55998 sec
+section(105) 응답시간 :  13.55322 sec
+총 응답시간 :  70.22530 sec
+section(100) 응답시간 :  13.56001 sec
+section(101) 응답시간 :  14.17095 sec
+section(102) 응답시간 :  13.70481 sec
+section(103) 응답시간 :  12.46734 sec
+section(105) 응답시간 :  13.92396 sec
+총 응답시간 :  67.82767 sec
+section(100) 응답시간 :  13.62461 sec
+section(101) 응답시간 :  14.51287 sec
+section(102) 응답시간 :  13.65070 sec
+section(103) 응답시간 :  12.86432 sec
+section(105) 응답시간 :  14.04465 sec
+총 응답시간 :  68.69853 sec
+section(100) 응답시간 :  13.44777 sec
+section(101) 응답시간 :  14.39951 sec
+section(102) 응답시간 :  14.08862 sec
+section(103) 응답시간 :  12.97271 sec
+section(105) 응답시간 :  14.04983 sec
+총 응답시간 :  68.95922 sec
+section(100) 응답시간 :  13.20728 sec
+section(101) 응답시간 :  14.48712 sec
+section(102) 응답시간 :  14.17640 sec
+section(103) 응답시간 :  13.24820 sec
+section(105) 응답시간 :  14.15378 sec
+총 응답시간 :  69.27340 sec
+section(100) 응답시간 :  12.96626 sec
+section(101) 응답시간 :  14.06881 sec
+section(102) 응답시간 :  13.59577 sec
+section(103) 응답시간 :  12.60505 sec
+section(105) 응답시간 :  13.84998 sec
+총 응답시간 :  67.08654 sec
+section(100) 응답시간 :  12.89785 sec
+section(101) 응답시간 :  14.12631 sec
+section(102) 응답시간 :  13.84877 sec
+section(103) 응답시간 :  13.24825 sec
+section(105) 응답시간 :  14.26510 sec
+총 응답시간 :  68.38682 sec
+section(100) 응답시간 :  13.64337 sec
+section(101) 응답시간 :  14.60533 sec
+section(102) 응답시간 :  14.45380 sec
+section(103) 응답시간 :  13.24368 sec
+section(105) 응답시간 :  14.64894 sec
+총 응답시간 :  70.59575 sec
+section(100) 응답시간 :  13.55837 sec
+section(101) 응답시간 :  13.98888 sec
+section(102) 응답시간 :  13.80291 sec
+section(103) 응답시간 :  13.02568 sec
+section(105) 응답시간 :  14.04782 sec
+총 응답시간 :  68.42428 sec
+section(100) 응답시간 :  13.72464 sec
+section(101) 응답시간 :  14.17138 sec
+section(102) 응답시간 :  14.09527 sec
+section(103) 응답시간 :  13.19302 sec
+section(105) 응답시간 :  14.48304 sec
+총 응답시간 :  69.66815 sec
+section(100) 응답시간 :  13.68721 sec
+section(101) 응답시간 :  14.27372 sec
+section(102) 응답시간 :  14.05977 sec
+section(103) 응답시간 :  13.40863 sec
+section(105) 응답시간 :  14.31087 sec
+총 응답시간 :  69.74088 sec
+section(100) 응답시간 :  12.94386 sec
+section(101) 응답시간 :  13.97670 sec
+section(102) 응답시간 :  13.88288 sec
+section(103) 응답시간 :  12.81269 sec
+section(105) 응답시간 :  13.65998 sec
+총 응답시간 :  67.27788 sec
+section(100) 응답시간 :  13.49485 sec
+section(101) 응답시간 :  14.16492 sec
+section(102) 응답시간 :  13.59962 sec
+section(103) 응답시간 :  12.78583 sec
+section(105) 응답시간 :  14.15347 sec
+총 응답시간 :  68.19933 sec
+section(100) 응답시간 :  13.13238 sec
+section(101) 응답시간 :  14.20367 sec
+section(102) 응답시간 :  13.80043 sec
+section(103) 응답시간 :  12.93982 sec
+section(105) 응답시간 :  14.18288 sec
+총 응답시간 :  68.26064 sec
+section(100) 응답시간 :  13.12683 sec
+section(101) 응답시간 :  13.97240 sec
+section(102) 응답시간 :  13.46330 sec
+section(103) 응답시간 :  12.53599 sec
+section(105) 응답시간 :  14.05351 sec
+총 응답시간 :  67.15266 sec
+section(100) 응답시간 :  13.22070 sec
+section(101) 응답시간 :  14.05090 sec
+section(102) 응답시간 :  14.69279 sec
+section(103) 응답시간 :  13.12664 sec
+section(105) 응답시간 :  13.91252 sec
+총 응답시간 :  69.00410 sec
+section(100) 응답시간 :  13.33399 sec
+section(101) 응답시간 :  13.68973 sec
+section(102) 응답시간 :  13.34776 sec
+section(103) 응답시간 :  12.28516 sec
+section(105) 응답시간 :  13.38473 sec
+총 응답시간 :  66.04195 sec
+section(100) 응답시간 :  13.00734 sec
+section(101) 응답시간 :  13.41150 sec
+section(102) 응답시간 :  13.43958 sec
+section(103) 응답시간 :  12.34959 sec
+section(105) 응답시간 :  13.73497 sec
+총 응답시간 :  65.94367 sec
+section(100) 응답시간 :  13.60811 sec
+section(101) 응답시간 :  13.99296 sec
+section(102) 응답시간 :  13.65175 sec
+section(103) 응답시간 :  13.81985 sec
+section(105) 응답시간 :  13.87526 sec
+총 응답시간 :  68.94982 sec
+section(100) 응답시간 :  12.81631 sec
+section(101) 응답시간 :  13.76983 sec
+section(102) 응답시간 :  13.46153 sec
+section(103) 응답시간 :  12.20365 sec
+section(105) 응답시간 :  13.65068 sec
+총 응답시간 :  65.90283 sec
+section(100) 응답시간 :  13.18946 sec
+section(101) 응답시간 :  13.93806 sec
+section(102) 응답시간 :  13.67964 sec
+section(103) 응답시간 :  12.46614 sec
+section(105) 응답시간 :  13.63957 sec
+총 응답시간 :  66.91355 sec
+section(100) 응답시간 :  13.12399 sec
+section(101) 응답시간 :  13.88013 sec
+section(102) 응답시간 :  13.50388 sec
+section(103) 응답시간 :  12.56548 sec
+section(105) 응답시간 :  13.92004 sec
+총 응답시간 :  66.99463 sec
+section(100) 응답시간 :  12.60920 sec
+section(101) 응답시간 :  13.47859 sec
+section(102) 응답시간 :  13.50825 sec
+section(103) 응답시간 :  12.15584 sec
+section(105) 응답시간 :  13.64072 sec
+총 응답시간 :  65.39327 sec
+section(100) 응답시간 :  12.85690 sec
+section(101) 응답시간 :  13.65956 sec
+section(102) 응답시간 :  13.57227 sec
+section(103) 응답시간 :  12.28734 sec
+section(105) 응답시간 :  13.52348 sec
+총 응답시간 :  65.90031 sec
+section(100) 응답시간 :  12.52018 sec
+section(101) 응답시간 :  13.28224 sec
+section(102) 응답시간 :  13.30453 sec
+section(103) 응답시간 :  11.80520 sec
+section(105) 응답시간 :  13.04628 sec
+총 응답시간 :  63.95901 sec
+section(100) 응답시간 :  12.21484 sec
+section(101) 응답시간 :  12.91245 sec
+section(102) 응답시간 :  12.85483 sec
+section(103) 응답시간 :  11.45421 sec
+section(105) 응답시간 :  12.47270 sec
+총 응답시간 :  61.90958 sec
+section(100) 응답시간 :  12.37916 sec
+section(101) 응답시간 :  13.60657 sec
+section(102) 응답시간 :  13.09399 sec
+section(103) 응답시간 :  12.10735 sec
+section(105) 응답시간 :  13.37316 sec
+총 응답시간 :  64.56080 sec
+section(100) 응답시간 :  12.36943 sec
+section(101) 응답시간 :  12.84672 sec
+section(102) 응답시간 :  12.81000 sec
+section(103) 응답시간 :  11.61136 sec
+section(105) 응답시간 :  13.12707 sec
+총 응답시간 :  62.76529 sec
+section(100) 응답시간 :  12.33183 sec
+section(101) 응답시간 :  13.36074 sec
+section(102) 응답시간 :  12.82575 sec
+section(103) 응답시간 :  11.63053 sec
+section(105) 응답시간 :  12.95250 sec
+총 응답시간 :  63.10226 sec
+section(100) 응답시간 :  12.63566 sec
+section(101) 응답시간 :  13.50774 sec
+section(102) 응답시간 :  13.95247 sec
+section(103) 응답시간 :  11.99783 sec
+section(105) 응답시간 :  13.07831 sec
+총 응답시간 :  65.17269 sec
+section(100) 응답시간 :  12.85341 sec
+section(101) 응답시간 :  13.56172 sec
+section(102) 응답시간 :  12.98741 sec
+section(103) 응답시간 :  12.14269 sec
+section(105) 응답시간 :  13.29814 sec
+총 응답시간 :  64.84420 sec
+section(100) 응답시간 :  12.82705 sec
+section(101) 응답시간 :  13.29831 sec
+section(102) 응답시간 :  12.55054 sec
+section(103) 응답시간 :  11.50476 sec
+section(105) 응답시간 :  12.59267 sec
+총 응답시간 :  62.77396 sec
+section(100) 응답시간 :  12.86462 sec
+section(101) 응답시간 :  13.26919 sec
+section(102) 응답시간 :  12.89739 sec
+section(103) 응답시간 :  12.30301 sec
+section(105) 응답시간 :  13.14955 sec
+총 응답시간 :  64.48433 sec
+section(100) 응답시간 :  13.10439 sec
+section(101) 응답시간 :  13.75837 sec
+section(102) 응답시간 :  13.24130 sec
+section(103) 응답시간 :  12.65840 sec
+section(105) 응답시간 :  13.31990 sec
+총 응답시간 :  66.08372 sec
+section(100) 응답시간 :  12.91648 sec
+section(101) 응답시간 :  13.81985 sec
+section(102) 응답시간 :  14.01965 sec
+section(103) 응답시간 :  12.72035 sec
+section(105) 응답시간 :  13.28390 sec
+총 응답시간 :  66.76163 sec
+section(100) 응답시간 :  13.52702 sec
+section(101) 응답시간 :  14.10322 sec
+section(102) 응답시간 :  13.59934 sec
+section(103) 응답시간 :  12.48500 sec
+section(105) 응답시간 :  13.21280 sec
+총 응답시간 :  66.92795 sec
+section(100) 응답시간 :  12.89199 sec
+section(101) 응답시간 :  13.16028 sec
+section(102) 응답시간 :  13.05943 sec
+section(103) 응답시간 :  12.37073 sec
+section(105) 응답시간 :  12.94311 sec
+총 응답시간 :  64.42626 sec
+section(100) 응답시간 :  12.52374 sec
+section(101) 응답시간 :  13.41082 sec
+section(102) 응답시간 :  13.37691 sec
+section(103) 응답시간 :  12.24639 sec
+section(105) 응답시간 :  13.07655 sec
+총 응답시간 :  64.63511 sec
+section(100) 응답시간 :  12.56457 sec
+section(101) 응답시간 :  13.30834 sec
+section(102) 응답시간 :  13.03052 sec
+section(103) 응답시간 :  12.70944 sec
+section(105) 응답시간 :  12.68429 sec
+총 응답시간 :  64.29782 sec
+section(100) 응답시간 :  13.66250 sec
+section(101) 응답시간 :  13.41369 sec
+section(102) 응답시간 :  13.20939 sec
+section(103) 응답시간 :  12.31063 sec
+section(105) 응답시간 :  13.06041 sec
+총 응답시간 :  65.65726 sec
+section(100) 응답시간 :  12.35906 sec
+section(101) 응답시간 :  12.85303 sec
+section(102) 응답시간 :  13.21441 sec
+section(103) 응답시간 :  12.66148 sec
+section(105) 응답시간 :  12.81055 sec
+총 응답시간 :  63.89913 sec
+section(100) 응답시간 :  12.46292 sec
+section(101) 응답시간 :  14.31232 sec
+section(102) 응답시간 :  13.73658 sec
+section(103) 응답시간 :  12.22002 sec
+section(105) 응답시간 :  13.02023 sec
+총 응답시간 :  65.75352 sec
+section(100) 응답시간 :  12.68139 sec
+section(101) 응답시간 :  13.17882 sec
+section(102) 응답시간 :  13.11224 sec
+section(103) 응답시간 :  12.18473 sec
+section(105) 응답시간 :  12.81993 sec
+총 응답시간 :  63.97843 sec
+section(100) 응답시간 :  12.86679 sec
+section(101) 응답시간 :  13.34575 sec
+section(102) 응답시간 :  13.15023 sec
+section(103) 응답시간 :  12.50403 sec
+section(105) 응답시간 :  13.24557 sec
+총 응답시간 :  65.11299 sec
+section(100) 응답시간 :  13.54844 sec
+section(101) 응답시간 :  13.89604 sec
+section(102) 응답시간 :  13.24085 sec
+section(103) 응답시간 :  12.93262 sec
+section(105) 응답시간 :  13.43220 sec
+총 응답시간 :  67.05167 sec
+section(100) 응답시간 :  12.76248 sec
+section(101) 응답시간 :  13.53760 sec
+section(102) 응답시간 :  13.47122 sec
+section(103) 응답시간 :  12.31833 sec
+section(105) 응답시간 :  13.24136 sec
+총 응답시간 :  65.33157 sec
+section(100) 응답시간 :  12.52863 sec
+section(101) 응답시간 :  13.04377 sec
+section(102) 응답시간 :  13.62531 sec
+section(103) 응답시간 :  11.97095 sec
+section(105) 응답시간 :  12.94705 sec
+총 응답시간 :  64.11642 sec
+section(100) 응답시간 :  12.44136 sec
+section(101) 응답시간 :  13.39475 sec
+section(102) 응답시간 :  13.64119 sec
+section(103) 응답시간 :  12.34442 sec
+section(105) 응답시간 :  13.16446 sec
+총 응답시간 :  64.98750 sec
+section(100) 응답시간 :  13.05491 sec
+section(101) 응답시간 :  13.51239 sec
+section(102) 응답시간 :  13.52540 sec
+section(103) 응답시간 :  12.43012 sec
+section(105) 응답시간 :  13.46597 sec
+총 응답시간 :  65.98949 sec
+section(100) 응답시간 :  13.71869 sec
+section(101) 응답시간 :  13.76548 sec
+section(102) 응답시간 :  13.45332 sec
+section(103) 응답시간 :  12.58146 sec
+section(105) 응답시간 :  13.26330 sec
+총 응답시간 :  66.78375 sec
+section(100) 응답시간 :  12.29980 sec
+section(101) 응답시간 :  13.15526 sec
+section(102) 응답시간 :  13.62992 sec
+section(103) 응답시간 :  12.00220 sec
+section(105) 응답시간 :  13.14472 sec
+총 응답시간 :  64.23256 sec
+section(100) 응답시간 :  12.70293 sec
+section(101) 응답시간 :  13.20919 sec
+section(102) 응답시간 :  13.10618 sec
+section(103) 응답시간 :  12.00300 sec
+section(105) 응답시간 :  12.98716 sec
+총 응답시간 :  64.00918 sec
+section(100) 응답시간 :  12.36684 sec
+section(101) 응답시간 :  12.94673 sec
+section(102) 응답시간 :  12.97081 sec
+section(103) 응답시간 :  11.79993 sec
+section(105) 응답시간 :  12.88380 sec
+총 응답시간 :  62.96899 sec
+section(100) 응답시간 :  12.32761 sec
+section(101) 응답시간 :  13.21618 sec
+section(102) 응답시간 :  12.76481 sec
+section(103) 응답시간 :  11.98221 sec
+section(105) 응답시간 :  12.93284 sec
+총 응답시간 :  63.22427 sec
+section(100) 응답시간 :  12.48883 sec
+section(101) 응답시간 :  12.95209 sec
+section(102) 응답시간 :  12.85532 sec
+section(103) 응답시간 :  11.83334 sec
+section(105) 응답시간 :  12.87053 sec
+총 응답시간 :  63.00079 sec
+section(100) 응답시간 :  12.97647 sec
+section(101) 응답시간 :  13.73268 sec
+section(102) 응답시간 :  13.69563 sec
+section(103) 응답시간 :  12.37317 sec
+section(105) 응답시간 :  13.48163 sec
+총 응답시간 :  66.26021 sec
+section(100) 응답시간 :  12.76175 sec
+section(101) 응답시간 :  13.51553 sec
+section(102) 응답시간 :  13.32232 sec
+section(103) 응답시간 :  12.02248 sec
+section(105) 응답시간 :  12.94516 sec
+총 응답시간 :  64.56791 sec
+section(100) 응답시간 :  12.74869 sec
+section(101) 응답시간 :  13.54528 sec
+section(102) 응답시간 :  13.51063 sec
+section(103) 응답시간 :  12.00099 sec
+section(105) 응답시간 :  13.31313 sec
+총 응답시간 :  65.12051 sec
+section(100) 응답시간 :  12.44252 sec
+section(101) 응답시간 :  14.01156 sec
+section(102) 응답시간 :  12.97385 sec
+section(103) 응답시간 :  11.66801 sec
+section(105) 응답시간 :  12.91263 sec
+총 응답시간 :  64.00931 sec
+section(100) 응답시간 :  12.75977 sec
+section(101) 응답시간 :  13.34785 sec
+section(102) 응답시간 :  13.33416 sec
+section(103) 응답시간 :  11.99350 sec
+section(105) 응답시간 :  13.20000 sec
+총 응답시간 :  64.63656 sec
+section(100) 응답시간 :  12.95856 sec
+section(101) 응답시간 :  13.69638 sec
+section(102) 응답시간 :  13.05983 sec
+section(103) 응답시간 :  12.26421 sec
+section(105) 응답시간 :  13.49936 sec
+총 응답시간 :  65.47891 sec
+section(100) 응답시간 :  12.36295 sec
+section(101) 응답시간 :  13.24378 sec
+section(102) 응답시간 :  12.69108 sec
+section(103) 응답시간 :  11.93145 sec
+section(105) 응답시간 :  12.87863 sec
+총 응답시간 :  63.10857 sec
+section(100) 응답시간 :  12.53771 sec
+section(101) 응답시간 :  13.36074 sec
+section(102) 응답시간 :  12.94645 sec
+section(103) 응답시간 :  11.54156 sec
+section(105) 응답시간 :  12.95477 sec
+총 응답시간 :  63.34176 sec
+section(100) 응답시간 :  12.70227 sec
+section(101) 응답시간 :  13.48593 sec
+section(102) 응답시간 :  12.70279 sec
+section(103) 응답시간 :  11.79940 sec
+section(105) 응답시간 :  12.93257 sec
+총 응답시간 :  63.62355 sec
+section(100) 응답시간 :  12.64381 sec
+section(101) 응답시간 :  13.37489 sec
+section(102) 응답시간 :  12.71392 sec
+section(103) 응답시간 :  11.65028 sec
+section(105) 응답시간 :  13.05336 sec
+총 응답시간 :  63.43684 sec
+section(100) 응답시간 :  13.75404 sec
+section(101) 응답시간 :  13.39884 sec
+section(102) 응답시간 :  12.89946 sec
+section(103) 응답시간 :  11.87593 sec
+section(105) 응답시간 :  13.10182 sec
+총 응답시간 :  65.03070 sec
+section(100) 응답시간 :  12.88693 sec
+section(101) 응답시간 :  13.49118 sec
+section(102) 응답시간 :  12.97674 sec
+section(103) 응답시간 :  12.83842 sec
+section(105) 응답시간 :  13.22939 sec
+총 응답시간 :  65.42330 sec
+section(100) 응답시간 :  12.84320 sec
+section(101) 응답시간 :  13.53470 sec
+section(102) 응답시간 :  13.07978 sec
+section(103) 응답시간 :  12.32041 sec
+section(105) 응답시간 :  13.63570 sec
+총 응답시간 :  65.41438 sec
+section(100) 응답시간 :  12.85234 sec
+section(101) 응답시간 :  13.51922 sec
+section(102) 응답시간 :  13.02859 sec
+section(103) 응답시간 :  12.15002 sec
+section(105) 응답시간 :  14.37897 sec
+총 응답시간 :  65.92969 sec
+section(100) 응답시간 :  12.62479 sec
+section(101) 응답시간 :  13.33335 sec
+section(102) 응답시간 :  13.00866 sec
+section(103) 응답시간 :  11.94970 sec
+section(105) 응답시간 :  13.09292 sec
+총 응답시간 :  64.01006 sec
+section(100) 응답시간 :  12.94118 sec
+section(101) 응답시간 :  13.33217 sec
+section(102) 응답시간 :  12.89475 sec
+section(103) 응답시간 :  11.88882 sec
+section(105) 응답시간 :  13.09120 sec
+총 응답시간 :  64.14904 sec
+section(100) 응답시간 :  12.52685 sec
+section(101) 응답시간 :  13.19758 sec
+section(102) 응답시간 :  12.68252 sec
+section(103) 응답시간 :  11.77071 sec
+section(105) 응답시간 :  12.93023 sec
+총 응답시간 :  63.10853 sec
+section(100) 응답시간 :  13.20453 sec
+section(101) 응답시간 :  14.06908 sec
+section(102) 응답시간 :  13.45247 sec
+section(103) 응답시간 :  12.35469 sec
+section(105) 응답시간 :  13.49199 sec
+총 응답시간 :  66.57443 sec
+section(100) 응답시간 :  13.04427 sec
+section(101) 응답시간 :  14.76412 sec
+section(102) 응답시간 :  13.34640 sec
+section(103) 응답시간 :  13.28484 sec
+section(105) 응답시간 :  13.41144 sec
+총 응답시간 :  67.85208 sec
+section(100) 응답시간 :  13.09156 sec
+section(101) 응답시간 :  14.35047 sec
+section(102) 응답시간 :  13.12598 sec
+section(103) 응답시간 :  12.35976 sec
+section(105) 응답시간 :  13.48914 sec
+총 응답시간 :  66.41751 sec
+section(100) 응답시간 :  12.84672 sec
+section(101) 응답시간 :  14.69886 sec
+section(102) 응답시간 :  13.04685 sec
+section(103) 응답시간 :  12.40311 sec
+section(105) 응답시간 :  13.19261 sec
+총 응답시간 :  66.18876 sec
+section(100) 응답시간 :  12.62953 sec
+section(101) 응답시간 :  13.50908 sec
+section(102) 응답시간 :  12.83947 sec
+section(103) 응답시간 :  11.85514 sec
+section(105) 응답시간 :  13.21553 sec
+총 응답시간 :  64.04932 sec
+section(100) 응답시간 :  12.95502 sec
+section(101) 응답시간 :  13.58221 sec
+section(102) 응답시간 :  12.90495 sec
+section(103) 응답시간 :  12.44932 sec
+section(105) 응답시간 :  13.31253 sec
+총 응답시간 :  65.20484 sec
+section(100) 응답시간 :  13.03351 sec
+section(101) 응답시간 :  13.81518 sec
+section(102) 응답시간 :  13.57316 sec
+section(103) 응답시간 :  13.45604 sec
+section(105) 응답시간 :  13.09537 sec
+총 응답시간 :  66.97382 sec
+section(100) 응답시간 :  12.83941 sec
+section(101) 응답시간 :  13.58222 sec
+section(102) 응답시간 :  13.08054 sec
+section(103) 응답시간 :  11.95438 sec
+section(105) 응답시간 :  13.31676 sec
+총 응답시간 :  64.77414 sec
+section(100) 응답시간 :  13.34206 sec
+section(101) 응답시간 :  14.06897 sec
+section(102) 응답시간 :  13.88653 sec
+section(103) 응답시간 :  12.78946 sec
+section(105) 응답시간 :  13.38800 sec
+총 응답시간 :  67.47635 sec
+section(100) 응답시간 :  12.82177 sec
+section(101) 응답시간 :  13.47566 sec
+section(102) 응답시간 :  13.13175 sec
+section(103) 응답시간 :  12.52604 sec
+section(105) 응답시간 :  12.82706 sec
+총 응답시간 :  64.78367 sec
+section(100) 응답시간 :  13.80802 sec
+section(101) 응답시간 :  13.79787 sec
+section(102) 응답시간 :  14.00874 sec
+section(103) 응답시간 :  12.83672 sec
+section(105) 응답시간 :  13.73582 sec
+총 응답시간 :  68.18901 sec
+section(100) 응답시간 :  12.81851 sec
+section(101) 응답시간 :  13.35983 sec
+section(102) 응답시간 :  13.30465 sec
+section(103) 응답시간 :  12.51858 sec
+section(105) 응답시간 :  13.29585 sec
+총 응답시간 :  65.29807 sec
+section(100) 응답시간 :  13.01941 sec
+section(101) 응답시간 :  13.29349 sec
+section(102) 응답시간 :  14.10002 sec
+section(103) 응답시간 :  12.63792 sec
+section(105) 응답시간 :  13.04901 sec
+총 응답시간 :  66.10075 sec
+section(100) 응답시간 :  13.20288 sec
+section(101) 응답시간 :  13.69709 sec
+section(102) 응답시간 :  13.60166 sec
+section(103) 응답시간 :  12.94639 sec
+section(105) 응답시간 :  13.44594 sec
+총 응답시간 :  66.89508 sec
+section(100) 응답시간 :  13.44599 sec
+section(101) 응답시간 :  13.86834 sec
+section(102) 응답시간 :  13.54959 sec
+section(103) 응답시간 :  13.28916 sec
+section(105) 응답시간 :  13.41980 sec
+총 응답시간 :  67.57342 sec
+section(100) 응답시간 :  13.53458 sec
+section(101) 응답시간 :  13.26199 sec
+section(102) 응답시간 :  13.07610 sec
+section(103) 응답시간 :  12.85944 sec
+section(105) 응답시간 :  13.33255 sec
+총 응답시간 :  66.06526 sec
+section(100) 응답시간 :  12.54427 sec
+section(101) 응답시간 :  13.26794 sec
+section(102) 응답시간 :  13.33441 sec
+section(103) 응답시간 :  12.30535 sec
+section(105) 응답시간 :  13.32929 sec
+총 응답시간 :  64.78215 sec
+section(100) 응답시간 :  12.98143 sec
+section(101) 응답시간 :  13.43572 sec
+section(102) 응답시간 :  13.41969 sec
+section(103) 응답시간 :  12.57068 sec
+section(105) 응답시간 :  13.66586 sec
+총 응답시간 :  66.07403 sec
+section(100) 응답시간 :  13.19107 sec
+section(101) 응답시간 :  13.69387 sec
+section(102) 응답시간 :  13.60175 sec
+section(103) 응답시간 :  12.81165 sec
+section(105) 응답시간 :  14.06627 sec
+총 응답시간 :  67.36517 sec
+section(100) 응답시간 :  12.78193 sec
+section(101) 응답시간 :  13.83550 sec
+section(102) 응답시간 :  13.36949 sec
+section(103) 응답시간 :  12.41576 sec
+section(105) 응답시간 :  13.69572 sec
+총 응답시간 :  66.09973 sec
+section(100) 응답시간 :  12.88541 sec
+section(101) 응답시간 :  13.63597 sec
+section(102) 응답시간 :  13.32854 sec
+section(103) 응답시간 :  13.40518 sec
+section(105) 응답시간 :  13.64586 sec
+총 응답시간 :  66.90197 sec
+section(100) 응답시간 :  12.69419 sec
+section(101) 응답시간 :  13.35042 sec
+section(102) 응답시간 :  13.37444 sec
+section(103) 응답시간 :  11.89277 sec
+section(105) 응답시간 :  12.89123 sec
+총 응답시간 :  64.20365 sec
+section(100) 응답시간 :  12.72179 sec
+section(101) 응답시간 :  13.28118 sec
+section(102) 응답시간 :  13.41336 sec
+section(103) 응답시간 :  12.11815 sec
+section(105) 응답시간 :  13.12841 sec
+총 응답시간 :  64.66360 sec
+section(100) 응답시간 :  14.72976 sec
+section(101) 응답시간 :  13.60672 sec
+section(102) 응답시간 :  13.58071 sec
+section(103) 응답시간 :  12.33835 sec
+section(105) 응답시간 :  13.54217 sec
+총 응답시간 :  67.79924 sec
+section(100) 응답시간 :  13.64933 sec
+section(101) 응답시간 :  14.20735 sec
+section(102) 응답시간 :  13.56033 sec
+section(103) 응답시간 :  12.41082 sec
+section(105) 응답시간 :  14.80934 sec
+총 응답시간 :  68.63876 sec
+section(100) 응답시간 :  13.19312 sec
+section(101) 응답시간 :  13.92406 sec
+section(102) 응답시간 :  13.15299 sec
+section(103) 응답시간 :  11.97030 sec
+section(105) 응답시간 :  13.51626 sec
+총 응답시간 :  65.75771 sec
+section(100) 응답시간 :  13.72334 sec
+section(101) 응답시간 :  13.78880 sec
+section(102) 응답시간 :  13.22619 sec
+section(103) 응답시간 :  12.05590 sec
+section(105) 응답시간 :  14.72285 sec
+총 응답시간 :  67.51766 sec
+section(100) 응답시간 :  13.93246 sec
+section(101) 응답시간 :  14.21728 sec
+section(102) 응답시간 :  13.80695 sec
+section(103) 응답시간 :  12.19631 sec
+section(105) 응답시간 :  13.80388 sec
+총 응답시간 :  67.95746 sec
+section(100) 응답시간 :  13.04195 sec
+section(101) 응답시간 :  13.24093 sec
+section(102) 응답시간 :  13.28708 sec
+section(103) 응답시간 :  11.75776 sec
+section(105) 응답시간 :  13.18906 sec
+총 응답시간 :  64.51734 sec
+section(100) 응답시간 :  13.67255 sec
+section(101) 응답시간 :  14.07926 sec
+section(102) 응답시간 :  13.85068 sec
+section(103) 응답시간 :  12.43953 sec
+section(105) 응답시간 :  13.93071 sec
+총 응답시간 :  67.97411 sec
+section(100) 응답시간 :  13.16884 sec
+section(101) 응답시간 :  13.99388 sec
+section(102) 응답시간 :  13.81628 sec
+section(103) 응답시간 :  12.16689 sec
+section(105) 응답시간 :  13.27095 sec
+총 응답시간 :  66.41749 sec
+section(100) 응답시간 :  13.16556 sec
+section(101) 응답시간 :  14.65068 sec
+section(102) 응답시간 :  13.55746 sec
+section(103) 응답시간 :  12.41978 sec
+section(105) 응답시간 :  13.55925 sec
+총 응답시간 :  67.35337 sec
+section(100) 응답시간 :  13.02567 sec
+section(101) 응답시간 :  13.87996 sec
+section(102) 응답시간 :  13.21699 sec
+section(103) 응답시간 :  12.36385 sec
+section(105) 응답시간 :  13.22765 sec
+총 응답시간 :  65.71472 sec
+section(100) 응답시간 :  12.94552 sec
+section(101) 응답시간 :  14.87076 sec
+section(102) 응답시간 :  13.36313 sec
+section(103) 응답시간 :  12.16258 sec
+section(105) 응답시간 :  13.36108 sec
+총 응답시간 :  66.70375 sec
+section(100) 응답시간 :  12.93962 sec
+section(101) 응답시간 :  13.80716 sec
+section(102) 응답시간 :  13.64630 sec
+section(103) 응답시간 :  12.06752 sec
+section(105) 응답시간 :  13.19542 sec
+총 응답시간 :  65.65704 sec
+section(100) 응답시간 :  13.09669 sec
+section(101) 응답시간 :  13.98770 sec
+section(102) 응답시간 :  13.65641 sec
+section(103) 응답시간 :  12.67616 sec
+section(105) 응답시간 :  13.58238 sec
+총 응답시간 :  66.99988 sec
+section(100) 응답시간 :  13.73939 sec
+section(101) 응답시간 :  13.83641 sec
+section(102) 응답시간 :  13.30217 sec
+section(103) 응답시간 :  12.32297 sec
+section(105) 응답시간 :  13.20566 sec
+총 응답시간 :  66.40715 sec
+section(100) 응답시간 :  13.62264 sec
+section(101) 응답시간 :  13.50536 sec
+section(102) 응답시간 :  13.37362 sec
+section(103) 응답시간 :  12.14205 sec
+section(105) 응답시간 :  12.86474 sec
+총 응답시간 :  65.50914 sec
+section(100) 응답시간 :  13.14458 sec
+section(101) 응답시간 :  13.49570 sec
+section(102) 응답시간 :  14.14704 sec
+section(103) 응답시간 :  12.31412 sec
+section(105) 응답시간 :  13.03073 sec
+총 응답시간 :  66.13283 sec
+section(100) 응답시간 :  13.26266 sec
+section(101) 응답시간 :  13.93028 sec
+section(102) 응답시간 :  13.30510 sec
+section(103) 응답시간 :  12.65042 sec
+section(105) 응답시간 :  13.56780 sec
+총 응답시간 :  66.71687 sec
+section(100) 응답시간 :  12.82933 sec
+section(101) 응답시간 :  13.44815 sec
+section(102) 응답시간 :  13.02459 sec
+section(103) 응답시간 :  12.99848 sec
+section(105) 응답시간 :  12.79090 sec
+총 응답시간 :  65.09205 sec
+section(100) 응답시간 :  13.02518 sec
+section(101) 응답시간 :  13.59052 sec
+section(102) 응답시간 :  13.20758 sec
+section(103) 응답시간 :  12.36897 sec
+section(105) 응답시간 :  12.92592 sec
+총 응답시간 :  65.11879 sec
+section(100) 응답시간 :  12.83645 sec
+section(101) 응답시간 :  13.12920 sec
+section(102) 응답시간 :  12.79199 sec
+section(103) 응답시간 :  12.07360 sec
+section(105) 응답시간 :  12.71427 sec
+총 응답시간 :  63.54621 sec
+section(100) 응답시간 :  13.08709 sec
+section(101) 응답시간 :  13.55763 sec
+section(102) 응답시간 :  13.38679 sec
+section(103) 응답시간 :  12.99682 sec
+section(105) 응답시간 :  13.27767 sec
+총 응답시간 :  66.30666 sec
+section(100) 응답시간 :  13.48318 sec
+section(101) 응답시간 :  13.71185 sec
+section(102) 응답시간 :  13.78096 sec
+section(103) 응답시간 :  12.95223 sec
+section(105) 응답시간 :  14.25373 sec
+총 응답시간 :  68.18259 sec
+section(100) 응답시간 :  13.19735 sec
+section(101) 응답시간 :  13.68698 sec
+section(102) 응답시간 :  13.67290 sec
+section(103) 응답시간 :  13.11093 sec
+section(105) 응답시간 :  13.15982 sec
+총 응답시간 :  66.82864 sec
+section(100) 응답시간 :  13.00941 sec
+section(101) 응답시간 :  13.11374 sec
+section(102) 응답시간 :  13.49237 sec
+section(103) 응답시간 :  12.57663 sec
+section(105) 응답시간 :  13.10791 sec
+총 응답시간 :  65.30167 sec
+section(100) 응답시간 :  12.90458 sec
+section(101) 응답시간 :  13.38428 sec
+section(102) 응답시간 :  13.29815 sec
+section(103) 응답시간 :  12.59659 sec
+section(105) 응답시간 :  12.92234 sec
+총 응답시간 :  65.10749 sec
+section(100) 응답시간 :  12.73512 sec
+section(101) 응답시간 :  12.98804 sec
+section(102) 응답시간 :  12.95950 sec
+section(103) 응답시간 :  12.15319 sec
+section(105) 응답시간 :  12.68187 sec
+총 응답시간 :  63.51838 sec
+section(100) 응답시간 :  13.04293 sec
+section(101) 응답시간 :  13.51493 sec
+section(102) 응답시간 :  13.20732 sec
+section(103) 응답시간 :  13.06689 sec
+section(105) 응답시간 :  13.09322 sec
+총 응답시간 :  65.92608 sec
+section(100) 응답시간 :  12.80389 sec
+section(101) 응답시간 :  13.38183 sec
+section(102) 응답시간 :  13.05994 sec
+section(103) 응답시간 :  12.21929 sec
+section(105) 응답시간 :  12.92710 sec
+총 응답시간 :  64.39267 sec
+section(100) 응답시간 :  13.10110 sec
+section(101) 응답시간 :  13.18135 sec
+section(102) 응답시간 :  12.95560 sec
+section(103) 응답시간 :  12.22269 sec
+section(105) 응답시간 :  12.61141 sec
+총 응답시간 :  64.07277 sec
+section(100) 응답시간 :  12.59466 sec
+section(101) 응답시간 :  12.67560 sec
+section(102) 응답시간 :  13.02373 sec
+section(103) 응답시간 :  12.37457 sec
+section(105) 응답시간 :  12.75176 sec
+총 응답시간 :  63.42119 sec
+section(100) 응답시간 :  12.96537 sec
+section(101) 응답시간 :  13.03957 sec
+section(102) 응답시간 :  13.16796 sec
+section(103) 응답시간 :  13.69224 sec
+section(105) 응답시간 :  13.00083 sec
+총 응답시간 :  65.86652 sec
+section(100) 응답시간 :  13.48358 sec
+section(101) 응답시간 :  13.19467 sec
+section(102) 응답시간 :  13.64401 sec
+section(103) 응답시간 :  12.92210 sec
+section(105) 응답시간 :  13.16043 sec
+총 응답시간 :  66.40538 sec
+section(100) 응답시간 :  12.82684 sec
+section(101) 응답시간 :  13.87413 sec
+section(102) 응답시간 :  13.58718 sec
+section(103) 응답시간 :  12.91920 sec
+section(105) 응답시간 :  13.25729 sec
+총 응답시간 :  66.46625 sec
+section(100) 응답시간 :  13.40796 sec
+section(101) 응답시간 :  13.70114 sec
+section(102) 응답시간 :  13.82157 sec
+section(103) 응답시간 :  12.92589 sec
+section(105) 응답시간 :  13.16387 sec
+총 응답시간 :  67.02176 sec
+section(100) 응답시간 :  12.87017 sec
+section(101) 응답시간 :  13.43724 sec
+section(102) 응답시간 :  12.89848 sec
+section(103) 응답시간 :  12.25798 sec
+section(105) 응답시간 :  12.93491 sec
+총 응답시간 :  64.39937 sec
+section(100) 응답시간 :  12.96043 sec
+section(101) 응답시간 :  14.10414 sec
+section(102) 응답시간 :  13.07590 sec
+section(103) 응답시간 :  12.23934 sec
+section(105) 응답시간 :  13.32010 sec
+총 응답시간 :  65.70180 sec
+section(100) 응답시간 :  13.33658 sec
+section(101) 응답시간 :  13.89344 sec
+section(102) 응답시간 :  13.43446 sec
+section(103) 응답시간 :  12.99232 sec
+section(105) 응답시간 :  13.94587 sec
+총 응답시간 :  67.60330 sec
+section(100) 응답시간 :  13.40397 sec
+section(101) 응답시간 :  14.10262 sec
+section(102) 응답시간 :  14.24727 sec
+section(103) 응답시간 :  12.66551 sec
+section(105) 응답시간 :  14.95272 sec
+총 응답시간 :  69.37309 sec
+section(100) 응답시간 :  13.95055 sec
+section(101) 응답시간 :  14.99865 sec
+section(102) 응답시간 :  14.24358 sec
+section(103) 응답시간 :  13.34408 sec
+section(105) 응답시간 :  15.03890 sec
+총 응답시간 :  71.57711 sec
+section(100) 응답시간 :  13.30959 sec
+section(101) 응답시간 :  14.57827 sec
+section(102) 응답시간 :  14.58172 sec
+section(103) 응답시간 :  13.09613 sec
+section(105) 응답시간 :  14.42930 sec
+총 응답시간 :  69.99587 sec
+section(100) 응답시간 :  13.36126 sec
+section(101) 응답시간 :  14.91907 sec
+section(102) 응답시간 :  14.20725 sec
+section(103) 응답시간 :  13.10696 sec
+section(105) 응답시간 :  14.43673 sec
+총 응답시간 :  70.03302 sec
+section(100) 응답시간 :  13.70323 sec
+section(101) 응답시간 :  14.11779 sec
+section(102) 응답시간 :  14.00240 sec
+section(103) 응답시간 :  12.63247 sec
+section(105) 응답시간 :  14.00513 sec
+총 응답시간 :  68.46170 sec
+section(100) 응답시간 :  15.62184 sec
+section(101) 응답시간 :  14.27838 sec
+section(102) 응답시간 :  14.09476 sec
+section(103) 응답시간 :  13.17124 sec
+section(105) 응답시간 :  14.70611 sec
+총 응답시간 :  71.87293 sec
+section(100) 응답시간 :  14.38458 sec
+section(101) 응답시간 :  14.82361 sec
+section(102) 응답시간 :  14.39414 sec
+section(103) 응답시간 :  13.43359 sec
+section(105) 응답시간 :  14.52174 sec
+총 응답시간 :  71.55833 sec
+section(100) 응답시간 :  13.45900 sec
+section(101) 응답시간 :  14.26433 sec
+section(102) 응답시간 :  14.46747 sec
+section(103) 응답시간 :  12.81339 sec
+section(105) 응답시간 :  14.27990 sec
+총 응답시간 :  69.28494 sec
+section(100) 응답시간 :  13.72526 sec
+section(101) 응답시간 :  14.56047 sec
+section(102) 응답시간 :  14.61780 sec
+section(103) 응답시간 :  12.90749 sec
+section(105) 응답시간 :  14.73985 sec
+총 응답시간 :  70.55197 sec
+section(100) 응답시간 :  13.38624 sec
+section(101) 응답시간 :  14.51341 sec
+section(102) 응답시간 :  14.08697 sec
+section(103) 응답시간 :  12.50951 sec
+section(105) 응답시간 :  14.17931 sec
+총 응답시간 :  68.67626 sec
+section(100) 응답시간 :  13.44641 sec
+section(101) 응답시간 :  14.58203 sec
+section(102) 응답시간 :  14.65079 sec
+section(103) 응답시간 :  13.17851 sec
+section(105) 응답시간 :  14.96728 sec
+총 응답시간 :  70.82678 sec
