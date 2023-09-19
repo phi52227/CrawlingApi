@@ -81,9 +81,10 @@ def crawling_article(url, index, News):
     article_content = str(html.select_one("#article_txt"))
     article_content = article_content.split("function")[0]
     article_content = article_content.replace("<br/>", "\n")
-    article_content = re.sub("<(.|\n|\r)+?>", "", article_content).strip()
+    article_content = re.sub("<(.|\n|\r)+?>", "\n", article_content).strip()
     article_content = re.sub(" +", " ", article_content)
     article_content = re.sub("\n{2,}", "\n\n", article_content)
+    article_content = article_content.replace('\n \n', '')
     # article_content = article_content.replace(" \n", "\n")
     # article_content = article_content.replace("\n", "\n ")
     # article_content = article_content.replace("\n \n", "\n\n")
