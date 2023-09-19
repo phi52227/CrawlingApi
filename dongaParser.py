@@ -66,8 +66,8 @@ def crawling_article(url, index, News):
     html = bs(html_text, "html.parser")
 
     article_title = html.select_one("#container > div.article_title > h1").get_text()
-    article_title = article_title.replace("...", "... ")
-    article_title = article_title.replace("...  ", "... ")
+    article_title = article_title.replace("…", "… ")
+    article_title = article_title.replace("…  ", "… ")
 
     article_time_arr = (
         html.select_one(
@@ -80,11 +80,13 @@ def crawling_article(url, index, News):
 
     article_content = str(html.select_one("#article_txt"))
     article_content = article_content.split("function")[0]
+    article_content = article_content.split('<div class="article_issue article_issue02">')[0]
     article_content = article_content.replace("<br/>", "\n")
     article_content = re.sub("<(.|\n|\r)+?>", "\n", article_content).strip()
     article_content = re.sub(" +", " ", article_content)
     article_content = re.sub("\n{2,}", "\n\n", article_content)
     article_content = article_content.replace('\n \n', '')
+    article_content = article_content.replace('\n크게보기\n', '')
     # article_content = article_content.replace(" \n", "\n")
     # article_content = article_content.replace("\n", "\n ")
     # article_content = article_content.replace("\n \n", "\n\n")
