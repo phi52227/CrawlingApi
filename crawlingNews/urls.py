@@ -33,6 +33,16 @@ from dongaIlbo.views import (
     SportsNewsListAPI as dongaIlboSportsNewsListAPI,
 )
 
+from yonhapNews.views import (
+    PoliticsNewsListAPI as yonhapNewsPoliticsNewsListAPI,
+    CultureNewsListAPI as yonhapNewsCultureNewsListAPI,
+    EconomyNewsListAPI as yonhapNewsEconomyNewsListAPI,
+    InternationalNewsListAPI as yonhapNewsInternationalNewsListAPI,
+    EntertainmentsNewsListAPI as yonhapNewsEntertainmentsNewsListAPI,
+    SocietyNewsListAPI as yonhapNewsSocietyNewsListAPI,
+    SportsNewsListAPI as yonhapNewsSportsNewsListAPI,
+    NorthKoreaNewsListAPI as yonhapNewsNorthKoreaNewsListAPI,
+)
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/news/naver/1", naverPoliticsNewsListAPI.as_view()),
@@ -47,4 +57,12 @@ urlpatterns = [
     path("api/news/donga/5", dongaIlboInternationalNewsListAPI.as_view()),
     path("api/news/donga/6", dongaIlboEntertainmentsNewsListAPI.as_view()),
     path("api/news/donga/7", dongaIlboSportsNewsListAPI.as_view()),
+    path("api/news/yonhap/1", yonhapNewsPoliticsNewsListAPI.as_view()),
+    path("api/news/yonhap/2", yonhapNewsEconomyNewsListAPI.as_view()),
+    path("api/news/yonhap/3", yonhapNewsSocietyNewsListAPI.as_view()),
+    path("api/news/yonhap/4", yonhapNewsCultureNewsListAPI.as_view()),
+    path("api/news/yonhap/5", yonhapNewsInternationalNewsListAPI.as_view()),
+    path("api/news/yonhap/6", yonhapNewsEntertainmentsNewsListAPI.as_view()),
+    path("api/news/yonhap/7", yonhapNewsSportsNewsListAPI.as_view()),
+    path("api/news/yonhap/8", yonhapNewsNorthKoreaNewsListAPI.as_view()),
 ]
