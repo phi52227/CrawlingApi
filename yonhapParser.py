@@ -36,7 +36,6 @@ sections = {
     'north-korea':NorthKoreaNews
 }
 
-
 # Function to collect news titles
 def collect_news_urls(section):
     news_urls = []
@@ -79,7 +78,24 @@ def crawling_article(url, index, News):
         .replace('송고시간', '')
     )
 
-    article_content = str(html.select_one("#articleWrap > div.content01.scroll-article-zone01 > div > div > article"))
+    article_content = html.select_one("#articleWrap > div.content01.scroll-article-zone01 > div > div > article")
+    try:
+        article_content.find('div', {'id':'newsWriterCarousel01'}).decompose()
+    except Exception as e:
+        pass
+    try:
+        article_content.find('div', {'class':'related-zone rel'}).decompose()
+    except Exception as e:
+        pass
+    try:
+        article_content.find('p', {'class':'txt-copyright adrs'}).decompose()
+    except Exception as e:
+        pass
+    try:
+        article_content.find('span', {'class':'blind'}).decompose()
+    except Exception as e:
+        pass
+    article_content = str(article_content)
     article_content = article_content.split("function")[0]
     article_content = article_content.split('<div class="article_issue article_issue02">')[0]
     article_content = article_content.replace("<br/>", "\n")
@@ -87,10 +103,9 @@ def crawling_article(url, index, News):
     article_content = re.sub("<(.|\n|\r)+?>", "\n", article_content).strip()
     article_content = re.sub(" +", " ", article_content)
     article_content = re.sub("\n{2,}", "\n\n", article_content)
+    article_content = re.sub("\n {1,}", "\n", article_content)
+    # article_content = article_content.replace("\n ", "\n")
     article_content = article_content.replace('\n \n', '')
-    # article_content = article_content.replace(" \n", "\n")
-    # article_content = article_content.replace("\n", "\n ")
-    # article_content = article_content.replace("\n \n", "\n\n")
     article_content = article_content.replace("  ", " ")
     article_content = article_content.replace("...", "... ")
     article_content = article_content.replace("...  ", "... ")
