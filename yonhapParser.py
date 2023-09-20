@@ -75,7 +75,7 @@ def crawling_article(url, index, News):
             '#newsUpdateTime01'
         )
         .get_text()
-        .replace('송고시간', '')
+        .replace('송고시간', '').strip()
     )
 
     article_content = html.select_one("#articleWrap > div.content01.scroll-article-zone01 > div > div > article")

@@ -43,13 +43,26 @@ from yonhapNews.views import (
     SportsNewsListAPI as yonhapNewsSportsNewsListAPI,
     NorthKoreaNewsListAPI as yonhapNewsNorthKoreaNewsListAPI,
 )
+
+from kukminIlbo.views import (
+    PoliticsNewsListAPI as kukminIlboPoliticsNewsListAPI,
+    IssueNewsListAPI as kukminIlboIssueNewsListAPI,
+    EconomyNewsListAPI as kukminIlboEconomyNewsListAPI,
+    InternationalNewsListAPI as kukminIlboInternationalNewsListAPI,
+    EntertainmentsNewsListAPI as kukminIlboEntertainmentsNewsListAPI,
+    SocietyNewsListAPI as kukminIlboSocietyNewsListAPI,
+    SportsNewsListAPI as kukminIlboSportsNewsListAPI,
+    LifeNewsListAPI as kukminIlboLifeNewsListAPI,
+)
 urlpatterns = [
     path("admin/", admin.site.urls),
+    # naver
     path("api/news/naver/politics", naverPoliticsNewsListAPI.as_view()),
     path("api/news/naver/economy", naverEconomyNewsListAPI.as_view()),
     path("api/news/naver/society", naverSocietyNewsListAPI.as_view()),
     path("api/news/naver/lifeculture", naverLifeCultureNewsListAPI.as_view()),
     path("api/news/naver/itscience", naverItScienceNewsListAPI.as_view()),
+    # donga
     path("api/news/donga/politics", dongaIlboPoliticsNewsListAPI.as_view()),
     path("api/news/donga/economy", dongaIlboEconomyNewsListAPI.as_view()),
     path("api/news/donga/society", dongaIlboSocietyNewsListAPI.as_view()),
@@ -57,6 +70,7 @@ urlpatterns = [
     path("api/news/donga/international", dongaIlboInternationalNewsListAPI.as_view()),
     path("api/news/donga/entertainments", dongaIlboEntertainmentsNewsListAPI.as_view()),
     path("api/news/donga/sports", dongaIlboSportsNewsListAPI.as_view()),
+    # yonhap
     path("api/news/yonhap/politics", yonhapNewsPoliticsNewsListAPI.as_view()),
     path("api/news/yonhap/economy", yonhapNewsEconomyNewsListAPI.as_view()),
     path("api/news/yonhap/society", yonhapNewsSocietyNewsListAPI.as_view()),
@@ -65,4 +79,13 @@ urlpatterns = [
     path("api/news/yonhap/entertainments", yonhapNewsEntertainmentsNewsListAPI.as_view()),
     path("api/news/yonhap/sports", yonhapNewsSportsNewsListAPI.as_view()),
     path("api/news/yonhap/northkorea", yonhapNewsNorthKoreaNewsListAPI.as_view()),
+    # kukmin
+    path("api/news/kukmin/politics", kukminIlboPoliticsNewsListAPI.as_view()),
+    path("api/news/kukmin/economy", kukminIlboEconomyNewsListAPI.as_view()),
+    path("api/news/kukmin/society", kukminIlboSocietyNewsListAPI.as_view()),
+    path("api/news/kukmin/issue", kukminIlboIssueNewsListAPI.as_view()),
+    path("api/news/kukmin/international", kukminIlboInternationalNewsListAPI.as_view()),
+    path("api/news/kukmin/entertainments", kukminIlboEntertainmentsNewsListAPI.as_view()),
+    path("api/news/kukmin/sports", kukminIlboSportsNewsListAPI.as_view()),
+    path("api/news/kukmin/life", kukminIlboLifeNewsListAPI.as_view()),
 ]
