@@ -8,6 +8,7 @@ import re
 from bs4 import BeautifulSoup as bs
 import os
 import django
+import html as hl
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "crawlingNews.settings")
 
@@ -68,6 +69,7 @@ def crawling_article(url, index, News):
     article_title = html.select_one("#container > div.article_title > h1").get_text()
     article_title = article_title.replace("…", "… ")
     article_title = article_title.replace("…  ", "… ")
+    article_title = hl.unescape(article_title)
 
     article_time_arr = (
         html.select_one(
@@ -93,8 +95,9 @@ def crawling_article(url, index, News):
     article_content = article_content.replace("  ", " ")
     article_content = article_content.replace("...", "... ")
     article_content = article_content.replace("...  ", "... ")
-    article_content = article_content.replace("&lt;", "<")
-    article_content = article_content.replace("&gt;", ">")
+    article_content = hl.unescape(article_content)
+    # article_content = article_content.replace("&lt;", "<")
+    # article_content = article_content.replace("&gt;", ">")
 
     try:
         News(
