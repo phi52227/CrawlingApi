@@ -54,6 +54,18 @@ from kukminIlbo.views import (
     SportsNewsListAPI as kukminIlboSportsNewsListAPI,
     LifeNewsListAPI as kukminIlboLifeNewsListAPI,
 )
+from ytnNews.views import (
+    PoliticsNewsListAPI as ytnNewsPoliticsNewsListAPI,
+    EconomyNewsListAPI as ytnNewsEconomyNewsListAPI,
+    InternationalNewsListAPI as ytnNewsInternationalNewsListAPI,
+    NationwideNewsListAPI as ytnNewsNationwideNewsListAPI,
+    SocietyNewsListAPI as ytnNewsSocietyNewsListAPI,
+    CultureNewsListAPI as ytnNewsCultureNewsListAPI,
+    ScienceNewsListAPI as ytnNewsScienceNewsListAPI,
+    SportsNewsListAPI as ytnNewsSportsNewsListAPI,
+    CalamityNewsListAPI as ytnNewsCalamityNewsListAPI
+)
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     # naver
@@ -88,4 +100,14 @@ urlpatterns = [
     path("api/news/kukmin/entertainments", kukminIlboEntertainmentsNewsListAPI.as_view()),
     path("api/news/kukmin/sports", kukminIlboSportsNewsListAPI.as_view()),
     path("api/news/kukmin/life", kukminIlboLifeNewsListAPI.as_view()),
+    # ytn
+    path("api/news/ytn/politics", ytnNewsPoliticsNewsListAPI.as_view()),
+    path("api/news/ytn/economy", ytnNewsEconomyNewsListAPI.as_view()),
+    path("api/news/ytn/society", ytnNewsSocietyNewsListAPI.as_view()),
+    path("api/news/ytn/nationwide", ytnNewsNationwideNewsListAPI.as_view()),
+    path("api/news/ytn/international", ytnNewsInternationalNewsListAPI.as_view()),
+    path("api/news/ytn/culture", ytnNewsCultureNewsListAPI.as_view()),
+    path("api/news/ytn/sports", ytnNewsSportsNewsListAPI.as_view()),
+    path("api/news/ytn/science", ytnNewsScienceNewsListAPI.as_view()),
+    path("api/news/ytn/calamity", ytnNewsCalamityNewsListAPI.as_view()),
 ]
