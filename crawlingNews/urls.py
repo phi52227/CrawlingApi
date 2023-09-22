@@ -65,6 +65,15 @@ from ytnNews.views import (
     SportsNewsListAPI as ytnNewsSportsNewsListAPI,
     CalamityNewsListAPI as ytnNewsCalamityNewsListAPI
 )
+from joongangIlbo.views import (
+    PoliticsNewsListAPI as joongangNewsPoliticsNewsListAPI,
+    EconomyNewsListAPI as joongangNewsEconomyNewsListAPI,
+    InternationalNewsListAPI as joongangNewsInternationalNewsListAPI,
+    SocietyNewsListAPI as joongangNewsSocietyNewsListAPI,
+    CultureNewsListAPI as joongangNewsCultureNewsListAPI,
+    SportsNewsListAPI as joongangNewsSportsNewsListAPI,
+    LifeNewsListAPI as joongangNewsLifeNewsListAPI
+)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -110,4 +119,12 @@ urlpatterns = [
     path("api/news/ytn/sports", ytnNewsSportsNewsListAPI.as_view()),
     path("api/news/ytn/science", ytnNewsScienceNewsListAPI.as_view()),
     path("api/news/ytn/calamity", ytnNewsCalamityNewsListAPI.as_view()),
+    # joongang
+    path("api/news/joongang/politics", joongangNewsPoliticsNewsListAPI.as_view()),
+    path("api/news/joongang/economy", joongangNewsEconomyNewsListAPI.as_view()),
+    path("api/news/joongang/society", joongangNewsSocietyNewsListAPI.as_view()),
+    path("api/news/joongang/international", joongangNewsInternationalNewsListAPI.as_view()),
+    path("api/news/joongang/culture", joongangNewsCultureNewsListAPI.as_view()),
+    path("api/news/joongang/sports", joongangNewsSportsNewsListAPI.as_view()),
+    path("api/news/joongang/life", joongangNewsLifeNewsListAPI.as_view()),
 ]

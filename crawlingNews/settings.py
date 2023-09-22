@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "news",
     "dongaIlbo",
-    "joonangIlbo",
+    "joongangIlbo",
     "kukminIlbo",
     "yonhapNews",
     "ytnNews",
