@@ -117,14 +117,14 @@ def crawling_article(url, index, News):
         print(e)
         pass
 
-
 options = webdriver.ChromeOptions()
-options.add_argument("headless")
-
+options.add_argument('--headless')
+options.add_argument('--no-sandbox')
+options.add_argument('--disable-dev-shm-usage')
 
 for section, News in sections.items():
     start = time.time()
-    driver = webdriver.Chrome(options=options)
+    driver = webdriver.Chrome(executable_path="/root/CrawlingApi/chromedriver-linux64/chromedriver", options=options)
     driver.get(
         f"https://news.naver.com/main/main.naver?mode=LSD&mid=shm&sid1={section}"
     )

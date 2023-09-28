@@ -1,7 +1,3 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 import time
 import requests
 import re
@@ -104,6 +100,7 @@ def crawling_article(url, index, News):
 
     article_content = str(article_content)
     article_content = article_content.split("※ '당신의 제보가 뉴스가 됩니다'")[0]
+    article_content = article_content.split("[저작권자(c) YTN 무단전재, 재배포 및 AI 데이터 활용 금지]")[0]
     article_content = article_content.replace("<br/>", "\n")
     article_content = article_content.replace('크게보기', '')
     article_content = article_content.replace("<b>", "")

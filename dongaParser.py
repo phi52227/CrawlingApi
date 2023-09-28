@@ -1,7 +1,3 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 import time
 import requests
 import re
@@ -85,6 +81,7 @@ def crawling_article(url, index, News):
     article_content = article_content.split('<div class="article_issue article_issue02">')[0]
     article_content = article_content.replace("<br/>", "\n")
     article_content = article_content.replace('크게보기', '')
+    article_content = article_content.replace('\r\n', '\n')
     article_content = re.sub("<(.|\n|\r)+?>", "\n", article_content).strip()
     article_content = re.sub(" +", " ", article_content)
     article_content = re.sub("\n{2,}", "\n\n", article_content)
@@ -109,11 +106,6 @@ def crawling_article(url, index, News):
     except Exception as e:
         print(e)
         pass
-
-
-options = webdriver.ChromeOptions()
-options.add_argument("headless")
-
 
 for section, News in sections.items():
     start = time.time()

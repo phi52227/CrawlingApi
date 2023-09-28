@@ -1,7 +1,3 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 import time
 import requests
 import re
@@ -97,6 +93,10 @@ def crawling_article(url, index, News):
         article_content.find('span', {'class':'blind'}).decompose()
     except Exception as e:
         pass
+    try:
+        article_content.find('div', {'class':'comp-box youtube-group'}).decompose()
+    except Exception as e:
+        pass
     article_content = str(article_content)
     article_content = article_content.split("function")[0]
     article_content = article_content.split('<div class="article_issue article_issue02">')[0]
@@ -125,11 +125,6 @@ def crawling_article(url, index, News):
     except Exception as e:
         print(e)
         pass
-
-
-options = webdriver.ChromeOptions()
-options.add_argument("headless")
-
 
 for section, News in sections.items():
     start = time.time()
