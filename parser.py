@@ -35,7 +35,7 @@ sections = {
 # Function to collect news titles
 def collect_news_urls():
     news_urls = []
-    for num1 in range(1, 5):
+    for num1 in range(1, 3):
         for num2 in range(1, 6):
             try:
                 element = wait.until(
@@ -136,11 +136,11 @@ for section, News in sections.items():
     all_news_urls = []
     all_news_urls += collect_news_urls()
 
-    driver.find_element(By.CSS_SELECTOR, "#paging > a:nth-child(2)").click()
-    time.sleep(0.5)
+    # driver.find_element(By.CSS_SELECTOR, "#paging > a:nth-child(2)").click()
+    # time.sleep(0.5)
 
-    # Collect news titles again after clicking the pagination link
-    all_news_urls += collect_news_urls()
+    # # Collect news titles again after clicking the pagination link
+    # all_news_urls += collect_news_urls()
 
     driver.quit()
 

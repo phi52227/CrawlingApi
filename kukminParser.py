@@ -79,7 +79,7 @@ def crawling_article(url, index, News):
     article_content = article_content.split('<div class="view_reporter">')[0]
     article_content = article_content.split('GoodNews paper ⓒ')[0]
     article_content = article_content.replace("<br/>", "\n")
-    article_content = article_content.replace('크게보기', '')
+    # article_content = article_content.replace('크게보기', '')
     article_content = article_content.replace("<b>", "")
     article_content = article_content.replace("</b>", "")
     article_content = re.sub("<(.|\n|\r)+?>", "\n", article_content).strip()
@@ -115,8 +115,10 @@ for section, News in sections.items():
     all_news_urls = []
     all_news_urls += collect_news_urls(section)
 
-    for index, url in enumerate(all_news_urls):
-        crawling_article(url, index, News)
+    # for index, url in enumerate(all_news_urls):
+    #     crawling_article(url, index, News)
+    for index in range(0, 10):
+        crawling_article(all_news_urls[index], index, News)
 
     end = time.time()
     print(f"section({section}) 응답시간 : {end - start : .5f} sec")

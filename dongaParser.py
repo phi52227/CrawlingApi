@@ -35,13 +35,13 @@ sections = {
 # Function to collect news titles
 def collect_news_urls(section):
     news_urls = []
-    for num in range(1, 40, 10):
-        response = requests.get(
-            f"https://www.donga.com/news/{section}?p={num}&prod=news&ymd=&m="
-        )
-        soup = bs(response.text, "html.parser")
-        for url in soup.find_all("div", class_="rightList"):
-            news_urls.append(url.find("a")["href"])
+
+    response = requests.get(
+        f"https://www.donga.com/news/{section}?p=1&prod=news&ymd=&m="
+    )
+    soup = bs(response.text, "html.parser")
+    for url in soup.find_all("div", class_="rightList"):
+        news_urls.append(url.find("a")["href"])
 
     return news_urls
 
@@ -80,7 +80,6 @@ def crawling_article(url, index, News):
     article_content = article_content.split("function")[0]
     article_content = article_content.split('<div class="article_issue article_issue02">')[0]
     article_content = article_content.replace("<br/>", "\n")
-    article_content = article_content.replace('크게보기', '')
     article_content = article_content.replace('\r\n', '\n')
     article_content = re.sub("<(.|\n|\r)+?>", "\n", article_content).strip()
     article_content = re.sub(" +", " ", article_content)

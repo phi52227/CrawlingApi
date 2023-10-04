@@ -33,16 +33,17 @@ sections = {
     'north-korea':NorthKoreaNews
 }
 
+headers = {'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36'}
+
 # Function to collect news titles
 def collect_news_urls(section):
     news_urls = []
-    for num in range(1, 3):
-        response = requests.get(
-            f"https://www.yna.co.kr/{section}/all/{num}"
-        )
-        soup = bs(response.text, "html.parser")
-        for url in soup.select("#container > div > div > div.section01 > section > div.list-type038 > ul > li > div > div.news-con"):
-            news_urls.append(url.find("a")["href"])
+    response = requests.get(
+        f"https://www.yna.co.kr/{section}/all/1", headers=headers
+    )
+    soup = bs(response.text, "html.parser")
+    for url in soup.select("#container > div > div > div.section01 > section > div.list-type038 > ul > li > div > div.news-con"):
+        news_urls.append(url.find("a")["href"])
 
     return news_urls
 
@@ -132,8 +133,8 @@ for section, News in sections.items():
     all_news_urls = []
     all_news_urls += collect_news_urls(section)
 
-    for index, url in enumerate(all_news_urls):
-        crawling_article(url, index, News)
+    for index in range(0, 10):
+        crawling_article(all_news_urls[index], index, News)
 
     end = time.time()
     print(f"section({section}) 응답시간 : {end - start : .5f} sec")

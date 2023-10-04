@@ -139,8 +139,8 @@ for section, News in sections.items():
     all_news_urls = []
     all_news_urls += collect_news_urls(section)
 
-    for index, url in enumerate(all_news_urls):
-        crawling_article(url, index, News)
+    for index in range(0, 10):
+        crawling_article(all_news_urls[index], index, News)
 
     end = time.time()
     print(f"section({str(News)}) 응답시간 : {end - start : .5f} sec")

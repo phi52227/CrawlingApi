@@ -59,11 +59,12 @@ def date_to_integer(target_date):
 
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
-options.add_argument('--no-sandbox')
+# options.add_argument('--no-sandbox')
 options.add_argument('--disable-dev-shm-usage')
 
 def crawling_article(url, News):
-    driver = webdriver.Chrome(executable_path="/root/CrawlingApi/chromedriver-linux64/chromedriver", options=options)
+    driver = webdriver.Chrome(options=options)
+    # driver = webdriver.Chrome(executable_path="/root/CrawlingApi/chromedriver-linux64/chromedriver", options=options)
     driver.get(url)
     wait = WebDriverWait(driver, 10)
     # element = wait.until((EC.visibility_of_element_located((By.XPATH, '//*[@id="container"]/section/article/header/div[2]/div/p[1]/time'))))
