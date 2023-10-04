@@ -56,9 +56,47 @@ def date_to_integer(target_date):
 
     return result_date
 
+def cleanup_html(article_content):
+    cleanup_items = [
+        ('div', {'id': 'newsWriterCarousel01'}),
+        ('div', {'class': 'related-zone rel'}),
+        ('p', {'class': 'txt-copyright adrs'}),
+        ('span', {'class': 'blind'}),
+        ('div', {'class': 'comp-box youtube-group'}),
+    ]
+    for tag, attrs in cleanup_items:
+        try:
+            if attrs:
+                article_content.find(tag, attrs).decompose()
+            else:
+                article_content.find(tag).decompose()
+        except Exception as e:
+            pass
+
+def process_article_content(article_content):
+    article_content = str(article_content)
+    article_content = article_content.split("function")[0]
+    article_content = article_content.split('<div class="article_issue article_issue02">')[0]
+    article_content = article_content.replace("<br/>", "\n")
+    article_content = article_content.replace('크게보기', '')
+    article_content = re.sub("<(.|\n|\r)+?>", "\n", article_content).strip()
+    article_content = re.sub(" +", " ", article_content)
+    article_content = re.sub("\n{2,}", "\n\n", article_content)
+    article_content = re.sub("\n {1,}", "\n", article_content)
+    article_content = article_content.replace('\n \n', '')
+    article_content = article_content.replace("  ", " ")
+    article_content = article_content.replace("...", "... ")
+    article_content = article_content.replace("...  ", "... ")
+    article_content = hl.unescape(article_content)
+
+    return article_content
 
 def crawling_article(url, index, News):
-    response = requests.get("https:" + url)
+    try:
+        response = requests.get("https:" + url, headers=headers)
+    except requests.exceptions.ChunkedEncodingError as e:
+        if e.errno == 10054:
+            print("크롤링 막힘")
 
     html_text = response.text
 
@@ -76,45 +114,9 @@ def crawling_article(url, index, News):
         .get_text()
         .replace('송고시간', '').strip()
     )
-
     article_content = html.select_one("#articleWrap > div.content01.scroll-article-zone01 > div > div > article")
-    try:
-        article_content.find('div', {'id':'newsWriterCarousel01'}).decompose()
-    except Exception as e:
-        pass
-    try:
-        article_content.find('div', {'class':'related-zone rel'}).decompose()
-    except Exception as e:
-        pass
-    try:
-        article_content.find('p', {'class':'txt-copyright adrs'}).decompose()
-    except Exception as e:
-        pass
-    try:
-        article_content.find('span', {'class':'blind'}).decompose()
-    except Exception as e:
-        pass
-    try:
-        article_content.find('div', {'class':'comp-box youtube-group'}).decompose()
-    except Exception as e:
-        pass
-    article_content = str(article_content)
-    article_content = article_content.split("function")[0]
-    article_content = article_content.split('<div class="article_issue article_issue02">')[0]
-    article_content = article_content.replace("<br/>", "\n")
-    article_content = article_content.replace('크게보기', '')
-    article_content = re.sub("<(.|\n|\r)+?>", "\n", article_content).strip()
-    article_content = re.sub(" +", " ", article_content)
-    article_content = re.sub("\n{2,}", "\n\n", article_content)
-    article_content = re.sub("\n {1,}", "\n", article_content)
-    # article_content = article_content.replace("\n ", "\n")
-    article_content = article_content.replace('\n \n', '')
-    article_content = article_content.replace("  ", " ")
-    article_content = article_content.replace("...", "... ")
-    article_content = article_content.replace("...  ", "... ")
-    article_content = hl.unescape(article_content)
-    # article_content = article_content.replace("&lt;", "<")
-    # article_content = article_content.replace("&gt;", ">")
+    article_content = cleanup_html(article_content)
+    article_content = process_article_content(article_content)
 
     try:
         News(
