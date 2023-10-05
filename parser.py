@@ -9,7 +9,6 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from concurrent.futures import ThreadPoolExecutor
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "crawlingNews.settings")
 
@@ -31,12 +30,14 @@ sections = {
     "105": ItScienceNews,
 }
 
+
 def create_session():
     # Create an HTTP session for making requests
     session = requests.Session()
     # Set headers, if needed
-    session.headers.update({'User-Agent': 'Your User Agent String'})
+    session.headers.update({"User-Agent": "Your User Agent String"})
     return session
+
 
 def collect_news_urls(session, section):
     news_urls = []
@@ -64,6 +65,7 @@ def collect_news_urls(session, section):
                 print(f"{num1} {num2} 불러오기 실패")
     return news_urls
 
+
 def date_to_integer(target_date):
     target_date = target_date.split()
     date = target_date[0][:-1].replace(".", "")
@@ -76,6 +78,7 @@ def date_to_integer(target_date):
     time = "".join(time)
     result_date = date + time
     return result_date
+
 
 def crawling_articles(session, section, News, all_news_urls):
     for index, url in enumerate(all_news_urls):
@@ -109,13 +112,16 @@ def crawling_articles(session, section, News, all_news_urls):
             print(e)
             pass
 
+
 def process_section(section, News, session):
     start = time.time()
     driver = webdriver.Chrome(
         executable_path="/root/CrawlingApi/chromedriver-linux64/chromedriver",
-        options=options
+        options=options,
     )
-    driver.get(f"https://news.naver.com/main/main.naver?mode=LSD&mid=shm&sid1={section}")
+    driver.get(
+        f"https://news.naver.com/main/main.naver?mode=LSD&mid=shm&sid1={section}"
+    )
     wait = WebDriverWait(driver, 3)
     time.sleep(0.5)
 
@@ -132,18 +138,17 @@ def process_section(section, News, session):
     end = time.time()
     print(f"section({section}) 응답시간 : {end - start : .5f} sec")
 
+
 if __name__ == "__main__":
     total_start = time.time()
     options = webdriver.ChromeOptions()
-    options.add_argument('--headless')
-    options.add_argument('--no-sandbox')
-    options.add_argument('--disable-dev-shm-usage')
+    options.add_argument("--headless")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
     session = create_session()
 
-    # Use ThreadPoolExecutor to parallelize section processing
-    with ThreadPoolExecutor(max_workers=len(sections)) as executor:
-        for section, News in sections.items():
-            executor.submit(process_section, section, News, session)
+    for section, News in sections.items():
+        process_section(section, News, session)
 
     total_end = time.time()
     print(f"총 응답시간 : {total_end - total_start : .5f} sec")
