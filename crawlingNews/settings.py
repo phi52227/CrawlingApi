@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "yonhapNews",
     "ytnNews",
     "rest_framework",
+    "user_phone_auth",
 ]
 
 MIDDLEWARE = [

@@ -63,7 +63,7 @@ from ytnNews.views import (
     CultureNewsListAPI as ytnNewsCultureNewsListAPI,
     ScienceNewsListAPI as ytnNewsScienceNewsListAPI,
     SportsNewsListAPI as ytnNewsSportsNewsListAPI,
-    CalamityNewsListAPI as ytnNewsCalamityNewsListAPI
+    CalamityNewsListAPI as ytnNewsCalamityNewsListAPI,
 )
 from joongangIlbo.views import (
     PoliticsNewsListAPI as joongangNewsPoliticsNewsListAPI,
@@ -72,8 +72,10 @@ from joongangIlbo.views import (
     SocietyNewsListAPI as joongangNewsSocietyNewsListAPI,
     CultureNewsListAPI as joongangNewsCultureNewsListAPI,
     SportsNewsListAPI as joongangNewsSportsNewsListAPI,
-    LifeNewsListAPI as joongangNewsLifeNewsListAPI
+    LifeNewsListAPI as joongangNewsLifeNewsListAPI,
 )
+
+from user_phone_auth.views import PhoneAuthAPI
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -97,7 +99,9 @@ urlpatterns = [
     path("api/news/yonhap/society", yonhapNewsSocietyNewsListAPI.as_view()),
     path("api/news/yonhap/culture", yonhapNewsCultureNewsListAPI.as_view()),
     path("api/news/yonhap/international", yonhapNewsInternationalNewsListAPI.as_view()),
-    path("api/news/yonhap/entertainments", yonhapNewsEntertainmentsNewsListAPI.as_view()),
+    path(
+        "api/news/yonhap/entertainments", yonhapNewsEntertainmentsNewsListAPI.as_view()
+    ),
     path("api/news/yonhap/sports", yonhapNewsSportsNewsListAPI.as_view()),
     path("api/news/yonhap/northkorea", yonhapNewsNorthKoreaNewsListAPI.as_view()),
     # kukmin
@@ -106,7 +110,9 @@ urlpatterns = [
     path("api/news/kukmin/society", kukminIlboSocietyNewsListAPI.as_view()),
     path("api/news/kukmin/issue", kukminIlboIssueNewsListAPI.as_view()),
     path("api/news/kukmin/international", kukminIlboInternationalNewsListAPI.as_view()),
-    path("api/news/kukmin/entertainments", kukminIlboEntertainmentsNewsListAPI.as_view()),
+    path(
+        "api/news/kukmin/entertainments", kukminIlboEntertainmentsNewsListAPI.as_view()
+    ),
     path("api/news/kukmin/sports", kukminIlboSportsNewsListAPI.as_view()),
     path("api/news/kukmin/life", kukminIlboLifeNewsListAPI.as_view()),
     # ytn
@@ -123,8 +129,13 @@ urlpatterns = [
     path("api/news/joongang/politics", joongangNewsPoliticsNewsListAPI.as_view()),
     path("api/news/joongang/economy", joongangNewsEconomyNewsListAPI.as_view()),
     path("api/news/joongang/society", joongangNewsSocietyNewsListAPI.as_view()),
-    path("api/news/joongang/international", joongangNewsInternationalNewsListAPI.as_view()),
+    path(
+        "api/news/joongang/international",
+        joongangNewsInternationalNewsListAPI.as_view(),
+    ),
     path("api/news/joongang/culture", joongangNewsCultureNewsListAPI.as_view()),
     path("api/news/joongang/sports", joongangNewsSportsNewsListAPI.as_view()),
     path("api/news/joongang/life", joongangNewsLifeNewsListAPI.as_view()),
+    # sms api
+    path("api/auth/sms/request", PhoneAuthAPI.as_view()),
 ]
