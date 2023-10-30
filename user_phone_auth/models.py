@@ -6,6 +6,10 @@ import datetime
 from django.utils import timezone
 from model_utils.models import TimeStampedModel
 
+import logging
+
+logging.basicConfig(filename="./debug.log", level=logging.DEBUG)
+
 
 class PhoneAuth(TimeStampedModel):
     phone_number = models.CharField(
@@ -19,8 +23,8 @@ class PhoneAuth(TimeStampedModel):
     def save(self, *args, **kwargs):
         self.auth_number = random.randint(100000, 999999)
         super().save(*args, **kwargs)
-        # self.send_sms()
-        print(self.auth_number)
+        self.send_sms()
+        # print(self.auth_number)
 
     def send_sms(self):
         data = {
@@ -33,6 +37,7 @@ class PhoneAuth(TimeStampedModel):
 
         res = message.send_one(data)
         print(json.dumps(res.json(), indent=2, ensure_ascii=False))
+        logging.debug(json.dumps(res.json(), indent=2, ensure_ascii=False))
 
     @classmethod
     def check_auth_number(cls, p_num, c_num):
