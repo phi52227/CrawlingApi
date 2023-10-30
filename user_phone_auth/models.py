@@ -13,8 +13,8 @@ class PhoneAuth(TimeStampedModel):
     )
     auth_number = models.IntegerField(verbose_name="인증 번호")
 
-    class Meta:
-        db_table = "auth"
+    # class Meta(TimeStampedModel.Meta):
+    #     db_table = "auth"
 
     def save(self, *args, **kwargs):
         self.auth_number = random.randint(100000, 999999)
